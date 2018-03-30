@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html language="es">
+<head>
+<title>Contactanos-FriendSpace</title>
+<link rel="stylesheet" href="contactanos.css">
+<link rel="shortcut icon" href="fslogo.ico">
+<meta charset="utf-8">
+</head>
+<body>
+<div id="header">
+  <h3 align="center">FriendSpace@gmail.com</h3>
+<p align="center">Contactanos a nuestro correo electronico para:</p>
+<p align="center">*Reaperturar cuenta suspendida</p>
+<p align="center">*Negocios</p>
+<p align="center">*Quejas</p>
+<p align="center">*Atencion al Cliente</p>
+</div>
+</body>
+</html>

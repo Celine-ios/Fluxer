@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html language="es">
+<head>
+<title>Configura-Smashcoco</title>
+<link rel="stylesheet" href="config.css">
+</head>
+<body>
+<div id="unicdiv">
+<table class="tablaconfig">
+<tbody>
+<tr>
+    <th>
+  <h1 id="encabezadotabla" align="center">Configura</h1>
+</th>
+<td>
+  <a href="" style="font-family:arial;color:coral;">Privacidad</a>
+  </td>
+<td>
+  <a href="" style="font-family:arial;color:coral;">Bloquea a los idiotas</a>
+</td>
+<td>
+  <a href="" style="font-family:arial;color:coral;">Suspender Cuenta</a>
+</td>
+<td>
+  <a href="" style="font-family:arial;color:coral;">Contactanos</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<footer id="lastdiv">
+  <p align="center">Creado por:</p>
+  <p align="center">Juan Guzman-Programador</p>
+  <p align="center">Ivan Mochniy-CEO</p>
+  <p align="center">Joseph Fahmi-Director Creativo</p>
+  
+  </footer>
+</body>
+</html>

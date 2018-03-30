@@ -1,0 +1,59 @@
+/* core/profile.css
+
+   /*
+
+  A Fluxer Stylesheet 
+  2018
+  Coded by: Juan Guzmán
+  CEO and Founder 
+
+   */
+ 
+ #wallpaper {
+
+ 	 color: #fff;
+ 	 padding: 0;
+ 	 display: flex;
+ }
+ #user-info {
+
+ 	display: flex;
+ 	margin: 0;
+ }
+ #profile-photo {
+
+ 	 margin: 10% 1% 2% 2%;
+ }
+ .user-name {
+
+ 	 font-family: 'Open Sans', sans-serif;
+ 	 margin-top: 13%;
+ 	 margin-left: 1%;
+ 	 display: inline;
+ }
+ #icon-hand {
+
+ 	 display: block;
+
+ }
+
+ #icon-hand:hover {
+
+ 	 color: #28a745 !important;
+ }
+
+ #icon-comment {
+
+
+	 display: block;
+
+ }
+
+ #icon-comment:hover {
+
+	color: #28a745 !important;
+
+ }	
+
+ 	
+

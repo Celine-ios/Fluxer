@@ -1,0 +1,41 @@
+/* shadows.css */
+/*
+
+  A Fluxer Stylesheet 
+  2018
+  Coded by: Juan Guzmán
+  CEO and Founder 
+
+   */
+
+  .sdw {
+
+	  border: none;
+
+  }
+
+  .sdw-basic {
+
+  	  box-shadow: #00000073 0px 0px 10px 6px;
+  }
+
+  .sdw-basic-left {
+
+  	  box-shadow: #00000073 3px 3px 10px 6px;
+  }
+
+  .sdw-basic-right {
+
+	
+	  box-shadow: #00000073 -2px 3px 10px 6px;
+
+  }
+  .sdw-basic-bottom {
+
+
+    box-shadow: #00000073 0px 3px 10px 6px;
+
+  }
+
+  
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html language="es">
+<head>
+<title>Bloquea a los Idiotas-FriendSpace</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="bloquealosidiotas.css">
+<link rel="shortcut icon" href="fslogo.ico">
+</head>
+<div id="header">
+<img src="" class="logo">
+</div>
+<div id="middle">
+<h2 align="center" class="seleccionatext">Escribe el perfil del acosador a bloquear</h2>
+<form action="acosador.php" method="post">
+<input type="text" tabindex="-1" class="cajaidiota" name="persona_a_bloquear" value="escribe el nombre del perfil del idiota">
+<input type="submit" name="hecho" class="botonhecho" value="hecho">
+</form>
+<p align="center">Despues de bloquear al usuario no podras ver su actividad (post's, fotos, perfil, etc.) en ninguna parte de nuestra red.</p>
+  </div>
+<div id="footer">
+  <p align="center">Creado por:</p>
+  <p align="center">Juan Guzman-Programador</p>
+  <p align="center">Ivan Mochniy-CEO</p>
+  <p align="center">Joseph Fahmi-Director Creativo</p>
+<p align="center">Todos los derechos reservados</p>
+<p align="center">2017-2018</p>
+</div>
+</body>
+</html>

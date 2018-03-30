@@ -1,0 +1,99 @@
+﻿body {
+    background: white;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+#header {
+    position: fixed ! important;
+    width: 100%;
+    border-radius: 0px;
+    height: 11%;
+    background: #006699;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    color: white;
+    font-family: consolas;
+    font-size: smaller;
+}
+.cajabusqueda {
+    top: 30%;
+    position: absolute;
+    width: 53%;
+    height: 30%;
+    border-radius: 0px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid aqua;
+    background: transparent;
+    color: white;
+    left: 19%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.cajabusqueda:focus {
+    
+        transition: border 2s ease-in-out 1s; 
+        outline: none; 
+        border-bottom: 1px solid blue;
+}
+.botonhecho {
+    position: absolute;
+    left: 75%;
+    background: darkcyan;
+    border: none;
+    color: floralwhite;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    top: 41%;
+    border-radius: 5px 10px;
+    width: 5%;
+    height: 21%;
+}
+.botonhecho:hover {
+    
+      -webkit-transition: box-shadow 1s ease-in 0.5s;
+      box-shadow: #7bdb7b 0px 0px 5px 0.5px;
+      background: #349c68;
+       
+}
+.botonhecho:focus {
+    
+      outline: none; 
+}
+h1 {
+    font-family: consolas;
+    color: white;
+    position: absolute;
+    left: 1%;
+    top: 12%;
+    font-size: larger;
+    width: 14%;
+    height: 37%;
+}
+#mid {
+    width: 100%;
+    height: 715px;
+    top: 75px;
+    position: absolute;
+    font-family: arial;
+    color: cadetblue;
+    padding-top: 200px;
+    background: -webkit-linear-gradient(top, #006699, #349c68);
+}
+#footer {
+    background: #349c68;
+    font-family: arial;
+    color: antiquewhite;
+    border: 1px solid aqua;
+    border-radius: 12px;
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 1000px;
+    margin: 0px;
+    padding-top: 30px;
+}
+.botonhecho:hover {
+
+    background-color: #006699;
+}

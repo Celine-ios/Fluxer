@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Inicia Sesion-FriendSpace</title>
+	<meta charset="utf-8">
+<!--	<meta http-equiv="refresh" content="3;url=http://www.advocar.com"> -->
+	<meta name="description" content="red social;social network;">
+	<meta name="classification" content="friends;space">
+	<meta name="author" content="Juan Guzman;Joseph Fahmi;Ivan Mochniy;Jose Naffah">
+	<meta name="keywords" content="amigos en internet;superman;batman;red social;helado;social network;friends;">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="iniciosesion.css">
+	<link rel="shortcut icon" href="Captura.png">
+	<!--<meta name="viewport" content="width=device-width,initial-scale=1">-->
+	<script type="text/javascript" src="script_iniciosesion.js"></script>
+	<script type="text/javascript">
+	
+		function checker() {
+
+			var email_field_value = document.getElementsByClassName('caja')[0].value;
+			var password_field_value = document.getElementsByClassName('caja_contraseña')[0].value;
+
+			 if (email_field_value == '') {
+
+				
+				document.getElementsByClassName('caja')[0].style.borderBottom='red solid 1px';
+				document.getElementsByClassName('caja')[0].style.borderTop='none';
+				document.getElementsByClassName('caja')[0].style.borderRight='none';
+				document.getElementsByClassName('caja')[0].style.borderLeft='none';
+
+
+					document.getElementById('remember_email').style.visibility='visible';
+				document.getElementById('remember_email').innerHTML='Ingresa tu e-mail';
+
+			}
+
+			else {
+
+               	  document.getElementsByClassName('caja')[0].style.borderBottom='aqua solid 1px';
+
+               	if (password_field_value == '') {
+
+               		document.getElementsByClassName('caja_contraseña')[0].style.borderBottom='red solid 1px';
+                    
+               		document.getElementById('remember_password').innerHTML='Ingresa tu Contraseña';
+               	}
+               	else {
+
+               		document.getElementsByClassName('caja_contraseña')[0].style.borderBottom='aqua solid 1px';
+               	}
+               }
+	
+		} 
+
+		function password_reconverter() {
+			
+				var password_field_value = document.getElementsByClassName('caja_contraseña')[0].value;
+
+			if ( password_field_value != '') {
+
+				document.getElementsByClassName('caja_contraseña')[0].style.borderBottom='blue 1px solid';
+				document.getElementById('remember_password').style.visibility='hidden';
+			}
+		}
+
+         function nofocus_changer() {
+         			
+         			var email_field_value = document.getElementsByClassName('caja')[0].value;
+			var password_field_value = document.getElementsByClassName('caja_contraseña')[0].value;
+                       
+
+                document.getElementsByClassName('caja_contraseña')[0].style.borderBottom='aqua 1px solid';
+                document.getElementsByClassName('caja_contraseña')[0].style.borderTop='none';
+                document.getElementsByClassName('caja_contraseña')[0].style.borderRight='none';
+                document.getElementsByClassName('caja_contraseña')[0].style.borderLeft='none';
+
+                    if ((email_field_value && password_field_value) == '') {
+
+                    	   alert("Por favor Introduce tu Email y Contraseña\nJuan Guzman");
+                    }
+
+                }
+</script>
+	</head>
+<body>
+<div id="header">
+	<font size="5">
+<h1 align="left">FriendSpace</h1>
+</font>
+	<span>Your Friends,On this Space.</span>
+	<p class="texto">Contraseña</p>
+	<p class="texto_contraseña">E-mail</p>
+<!--	<form method="post" action="inicioscript.php" autocomplete="on" novalidate> -->
+	<input type="email" name="email" class="caja" autofocus required onfocus="document.getElementById('remember_email').style.visibility='hidden'; document.getElementsByClassName('caja')[0].style.borderBottom='1px solid blue'; " onblur="document.getElementsByClassName('caja')[0].style.borderBottom='1px solid aqua'; document.getElementsByClassName('caja')[0].style.borderTop='none'; document.getElementsByClassName('caja')[0].style.borderRight='none'; document.getElementsByClassName('caja')[0].style.borderLeft='none';">
+	<input type="password" name="contraseña" class="caja_contraseña" required onfocus="checker();" onkeyup="password_reconverter();" onblur="nofocus_changer();">
+	<div id="button_div" onmouseover="funny_button();">
+	<a href="#"><input type="submit" name="aceptar" class="boton_aceptar" value="Dale"></a>
+	</div>
+	<!--</form>-->
+	<div id="remember_email">
+		<p></p>
+	</div>
+	<div id="remember_password">
+		<p></p>
+	</div>
+
+	<div class="register-mobile">
+	<a href="registro.html"><p>Registrate</p></a>
+	</div>
+
+<!-- Responsive Button -->
+<div id="responsive_container">
+  <button class="responsive_button">
+ <hr>
+ <hr>
+ <hr>
+  </button>
+</div>
+
+</div>
+<div id="fast_line"></div>
+<div id="mid">
+	<h2 align="center">¡Registrate y Comparte con tus amigos!</h2>
+	<p align="center">Con FriendSpace puedes hacerlo y mucho mas</p>
+	<p align="center">Usa tambien FriendsBump y FriendsTester</p>
+	<p align="center" style="font-weight: bold;">Registrate pulsando aqui</p>
+	<a href="registro.html"><input type="submit" name="aceptar" class="boton_registro" value="dale"></a>
+	<aside>
+		<p align="center">Creado por:</p>
+		<p align="center">Juan Guzman</p>
+		<p align="center">Joseph Fahmi</p>
+		<p align="center">Ivan Mochniy</p>
+	</aside>
+</div>
+
+</body>
+</html> 

@@ -1,0 +1,39 @@
+/* inputs.css 
+
+  /*
+
+  A Fluxer Stylesheet 
+  2018
+  Coded by: Juan Guzmán
+  CEO and Founder 
+
+   */
+  .input {
+
+  	 display: block;
+  }
+	
+  .input:focus {
+
+  	  outline: none;
+  }
+
+  .input-comment {
+
+
+	border: none;
+	border-bottom: 1px solid #8A8888;
+	font-family: 'Open Sans',sans-serif;
+	transition: border 0.5s ease 1s;
+
+  }
+
+  .input-comment:focus {
+
+	border-bottom: 1px solid #28a745;
+
+  }
+  .input-comment::selection {
+
+  	  background: #007bff;
+  }
