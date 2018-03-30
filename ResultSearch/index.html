@@ -1,0 +1,95 @@
+﻿<!--Hola bro,que tal yo del futuro?,bueno si quieres quitar la cosa fastidiosa del campo de texto solo elimina el atributo "pattern" que esta en el tag input y despues quita tambien el atributo "title" PD:como dato curioso,dale enviar primero y vuelve a escribir despues,veras un mensaje de error personalizado  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resultados de Busqueda-FriendSpace</title>
+	<link rel="stylesheet" type="text/css" href="resultbusqueda.css">
+	<link rel="shortcut icon" href="Captura.png">
+	<script type="text/javascript" src="script_result.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+<div id="header">
+    <font size="5">
+<h1 align="left">FriendSpace</h1>
+</font>
+	<form action="busqueda.php" method="post">
+<input pattern="[A-Z] {1}" class="cajabusqueda" type="search" tabindex="-1" name="busqueda" placeholder="Busca a quien quieras" autofocus required list="sugerencias" title="please bro">
+<datalist id="sugerencias">
+	<option value="Juan Guzman" label="Nombre1">
+	<option value="Ivan Mochniy" label="Nombre2">
+	<option value="joseph Fahmi" label="Nombre3">
+</datalist>
+<input type="submit" name="busquedahecha" class="botonhecho" value="Buscar">
+</form>
+</div>
+<div class="cool_line"></div>
+ <table class="tabla">
+ 	<tbody>
+ 	<tr>
+ 		<td id="bar">
+ 			<nav id="barra">
+ 				<ul>
+ 					<li class="personas_opcion"><a href="#">Perfiles</a></li>
+ 					<li class="publicidad_opcion"><a href="#">Publicidad</a></li>
+ 				</ul>
+ 			</nav>
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<td id="result1">
+ 			<img src="" class="img_result">
+ 			<a href="#"><h4 class="text_search">Juan Pablo Guzman</h4></a>
+ 			<p>Hola bro's PVCF♥</p>
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<td id="result2">
+ 			<img src="" class="img_result">
+ 			<a href="#"><h4 class="text_search">Paula Castillo Flores ♥</h4></a>
+ 			<p>Hi Guys!</p>
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<td id="result3">
+ 			<img src="" class="img_result">
+ 			<a href="#"><h4 class="text_search">Ivan Mochniy</h4></a>
+ 			<p>Soy Gay</p>
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<td id="result4">
+ 			<img src="" class="img_result">
+ 			<a href="#"><h4 class="text_search">Joseph Fahmi</h4></a>
+ 			<p>Boom Boom Bang</p>
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<td id="result5">
+ 			<img src="" class="img_result">
+ 			<a href="#"><h4 class="text_search">Joseph Fahmi</h4></a>
+ 			<p>Boom Boom Bang</p>
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<td id="result6">
+ 			<img src="" class="img_result">
+ 			<a href="#"><h4 class="text_search">Joseph Fahmi</h4></a>
+ 			<p>Boom Boom Bang</p>
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<td id="result7">
+ 			<img src="" class="img_result">
+ 			<a href="#"><h4 class="text_search">Joseph Fahmi</h4></a>
+ 			<p>Boom Boom Bang</p>
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<td><a href="#" style="font-family: arial;position: absolute;left: 44%;padding-top: 10px;">Mas Resultados</a></td>
+ 	</tr>
+ 	</tbody>
+ </table>
+</body>
+</html>

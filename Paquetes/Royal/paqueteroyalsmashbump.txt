@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html language="es"><head>
+<title>Paquete Basic-FriendSpace</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="paquetebasic.css">
+<link rel="shortcut icon" href="sclogo.ico">
+</head>
+<body>
+<div id="header">
+<img src="" class="logo">
+</div>
+<div id="mid">
+<h2 align="center">Paquete Royal</h2>
+<p align="center">1500 bs.</p>
+<p align="center">Este paquete trae dos semanas completa de publicidad de tu perfil en todas partes y en todos los perfiles de nuestra red</p>
+<p align="center">Los avisos de publicidad de este paquete son de 500px de ancho por 500px de alto (500px x 500px)</p>
+<form action="paquetebaic.php" method="post">
+<p id="accountnametext">Nombre de la Cuenta</p>
+<input type="text" name="nombre_perfil" value="Nombre de Cuenta" id="cajanombrecuenta">
+<p id="paymethodtext">Metodo de Pago</p><p id="enviotext">Envio</p>
+
+<input type="radio" id="botonpaymethod_send" name="metodo_pago_envio"><p id="bancotext">Banco</p>
+
+<input type="radio" name="metodo_pago_banco" id="paymethod_bank">
+<p id="bancotexto">Banco</p>
+<select id="banconombre" name="Banco">
+<option>Mercantil</option>
+<option>Banco de Venezuela
+</option><option>Banesco</option>
+<option>Banco Fondo Comun</option>
+</select>
+<p id="numerotarjetatext">Numero de Tarjeta</p>
+<input type="text" name="numero_tarjeta" value="Numero de Tarjeta" id="cajanumerotarjeta">
+<p id="cedulatext">Cedula de Identidad</p>
+<input type="text" name="cedula" value="Cedula de Identidad" id="cajacedula">
+<p id="nombrecivil">Nombre de Civil</p>
+<input type="text" name="nombre_civil" value="Nombre de Civil" id="cajanombrecivil">
+<p id="empresadeenviotext">Empresa de Envio</p>
+<select id="empresaenvio" name="Empresa de Envio">
+<option>DOMESA</option>
+<option>MRW</option>
+</select>
+  <input type="submit" name="hecho" value="hecho" class="botonhecho">
+</form>
+<p id="textoabajo">Si su metodo de pago es por envio,por favor asegurese de enviar,aparte del pago,un papel con su nombre de cuenta y su nombre de civil.En menos de 24 horas estaremos anunciando su publicidad en nuestra red</p>
+</div>
+<div id="footer">
+</div>
+
+
+
+ </body></html>
+

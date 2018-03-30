@@ -1,0 +1,285 @@
+﻿/* resultbusqueda.css */
+
+body {
+    margin: auto;
+    background: -webkit-linear-gradient(top,#349c68 20%,blue);
+    background: -moz-linear-gradient(top,#349c68 20%,blue);
+    background: -ms-linear-gradient(top,#349c68 20%,blue);
+    background: -o-linear-gradient(top,#349c68 20%,blue);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1280px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.tabla {
+    height: 120%;
+    left: 16%;
+    right: 17%;
+    position: absolute;
+    width: 67%;
+    border: 1px solid aqua;
+    border-radius: 15px;
+    margin: 0px;
+    top: 1px;
+    background: white;
+}
+#header {
+    position: fixed ! important;
+    width: 100%;
+    border-radius: 0px;
+    height: 11%;
+    background: #349c68;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.cajabusqueda {
+    top: 30%;
+    position: absolute;
+    width: 53%;
+    height: 30%;
+    border-radius: 0px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 1px solid aqua;
+    background: transparent;
+    color: white;
+    left: 19%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+.cajabusqueda:focus {
+    
+        transition: border 2s ease-in-out 1s; 
+        outline: none; 
+        border-bottom: 1px solid blue;
+}
+.botonhecho {
+    position: absolute;
+    left: 75%;
+    background: darkcyan;
+    border: none;
+    color: floralwhite;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    top: 41%;
+    border-radius: 5px 10px;
+    width: 5%;
+    height: 21%;
+}
+.botonhecho:hover {
+    
+      -webkit-transition: box-shadow 1s ease-in 0.5s;
+      box-shadow: #7bdb7b 0px 0px 5px 0.5px;
+      background: #349c68;
+       
+}
+.botonhecho:focus {
+    
+      outline: none; 
+}
+#barra {
+    position: absolute;
+    top: 10%;
+    color: #349c68;
+    width: 99%;
+    border-radius: 10px;
+    box-shadow: #969696 0px 5px 10px;
+    height: 5%;
+}
+.personas_opcion {
+    position: absolute;
+    border-radius: 5px;
+    top: 29%;
+    left: 5%;
+}
+.publicidad_opcion {
+    position: absolute;
+    left: 17%;
+    top: 29%;
+}
+a {
+	text-decoration: none;
+	color: #349c68;
+
+}
+#result1 {
+    position: absolute;
+    width: 99%;
+    height: 11%;
+    border-radius: 5px;
+    top: 15%;
+    box-shadow: #969696 0px 5px 10px;
+}
+.text_search {
+    position: absolute;
+    left: 17%;
+    color: #349c68;
+}
+#result2 {
+    position: absolute;
+    width: 99%;
+    height: 11%;
+    border-radius: 5px;
+    top: 26%;
+    box-shadow: #969696 0px 5px 10px;
+}
+#result3 {
+    position: absolute;
+    width: 99%;
+    height: 11%;
+    border-radius: 5px;
+    top: 37%;
+    box-shadow: #969696 0px 5px 10px;
+}
+#result4 {
+    position: absolute;
+    width: 99%;
+    height: 11%;
+    border-radius: 5px;
+    top: 48%;
+    box-shadow: #969696 0px 5px 10px;
+}
+#result5 {
+    position: absolute;
+    width: 99%;
+    height: 11%;
+    border-radius: 5px;
+    top: 59%;
+    box-shadow: #969696 0px 5px 10px;
+}
+#result6 {
+    position: absolute;
+    width: 99%;
+    height: 11%;
+    border-radius: 5px;
+    top:  70%;
+    box-shadow: #969696 0px 5px 10px;
+}
+#result7 {
+    position: absolute;
+    width: 99%;
+    height: 11%;
+    border-radius: 5px;
+    top: 81%;
+    box-shadow: #969696 0px 5px 10px;
+}
+p {
+    position: absolute;
+    color: grey;
+    left: 17.5%;
+    top: 34%;
+}
+.img_result {
+    position: absolute;
+    width: 10%;
+    border: 1px solid aqua;
+    top: 12%;
+    height: 72%;
+    left: 4%;
+    border-radius: 87px;
+}
+a:hover {
+	color: cadetblue;
+}
+
+.text_search:hover {
+
+    color: cadetblue; 
+}
+.img_result:hover {
+
+    border: 1px solid #349c68;
+    
+}
+.cool_line {
+
+    position: fixed !important;
+    left: 0px;
+    top: 11%;
+    width: 0px;
+    background: -webkit-linear-gradient(left,#349c68,blue);
+    height: 4px;
+    z-index: 1;
+    -webkit-transition: width 0.5s ease 0.5s;
+    -moz-transition: width 0.5s ease 0.5s;
+    -ms-transition: width 0.5s ease 0.5s;
+    -o-transition: width 0.5s ease 0.5s;
+}
+h1 {
+
+     font-family: consolas;
+     color: white;
+     position: absolute;
+     left: 1%;
+     top: 12%;
+     font-size: larger;
+     width: 14%;
+     height: 37%;
+}
+form {
+
+    visibility: visible;
+}
+
+@media screen and (max-width: 1050px) {
+
+                h1 {
+
+                     font-size: smaller;
+                }
+
+}
+@media screen and (max-width: 950px) {
+
+                .publicidad_opcion {
+
+                    left: 20%;
+
+                }
+
+}
+@media screen and (max-width: 1040px) {
+
+
+    a [href="#" style="font-family: arial;position: absolute;left: 44%;padding-top: 10px;"] {
+
+
+           left: 43%;
+    }
+}
+@media screen and (max-width: 320px) {
+
+    form {
+
+        visibility: hidden;
+    }
+    h1 {
+
+        font-size: medium;
+    }
+
+}
+@media screen and (max-width: 1049px) {
+
+
+      h1 {
+
+          font-size: 24px;
+      }
+}
+@media screen and (max-width: 860px) {
+
+
+        .cajabusqueda {
+
+
+              left: 22%;
+              top: 32%;
+        }
+
+        .botonhecho {
+
+            left: 80%;
+        }
+      
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html language="es">
+<head>
+<title>Notificaciones-FriendSpace</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="notificaciones.css">
+<link rel="shortcut icon" href="fslogo.ico">
+</head>
+<body>
+<div id="header">
+<img src="" class="logo">
+</div>
+<div id="mid">
+<table class="tabla">
+<tbody>
+<tr>
+  <th><a id="loloplo" href="">Notificaciones</a></th>
+  <td style="top:25px;"><a href="">Notificacion</a></td>
+  
+  <td style="top:75px;"><a href="">Notificacion</a></td><td style="top:125px;"><a href="">Notificacion</a></td>
+  
+  <td style="top:175px;"><a href="">Notificacion</a></td><td style="top:225px;"><a href="">Notificacion</a></td>
+  
+  <td style="top:275px;"><a href="">Notificacion</a></td><td style="top:325px;"><a href="">Notificacion</a></td>
+  
+  <td style="top:375px;"><a href="">Notificacion</a></td><td style="top:425px;"><a href="">Notificacion</a></td>
+  
+  <td style="top:475px;"><a href="">Notificacion</a></td><td style="top:525px;"><a href="">Notificacion</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="footer">
+<p align="center">Creado por:</p>
+<p align="center">Juan Guzman-Programador</p>
+<p align="center">Ivan Mochniy-CEO</p>
+<p align="center">Joseph Fahmi-Director Creativo</p>
+<p align="center">Todos Los Derechos Reservados</p>
+<p align="center">2017-2018</p>
+</div>
+
+
+</body></html>

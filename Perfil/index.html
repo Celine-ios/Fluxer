@@ -1,0 +1,129 @@
+﻿<!doctype html>
+<html language="es">
+<head>
+<!-- ICON -->
+<link rel="shortcut icon" href="Captura.png">
+<!-- Characters Codification -->
+<meta charset="UTF-8">
+<title>Fluxer</title>
+<!-- Meta Viewport -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!-- JQuery Library V.3.2.1 -->
+<script type="text/javascript" src="/dashboard/Fluxer/jquery-3.2.1.min.js"></script>
+<!-- Fluxer CSS Stylesheets -->
+<!-- Profile CSS Core Stylesheet -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/core/profile.css">
+<!-- Containers -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/containers.css">
+<!-- Headings -->
+<link rel="stylesheet" type="text/css" href="/dashboard/Fluxer/css/headings.css">
+<!-- Colors & Gradients -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/colors-gradients.css">
+<!-- Modals -->
+<link rel="stylesheet" type="text/css" href="/dashboard/Fluxer/css/modals.css">
+<!-- Buttons -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/buttons.css">
+<!-- Images -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/images.css">
+<!-- Shadows -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/shadows.css">
+<!-- Links -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/links.css">
+<!-- Text Position -->
+<link rel="stylesheet" type="text/css" href="/dashboard/Fluxer/css/text-position.css">
+<!-- Timeline -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/timeline.css">
+<!-- Text Colors -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/text-colors.css">
+<!-- Inputs -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/inputs.css">
+<!-- Tootlips -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/tooltips.css">
+<!-- Open Sans Font by Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<!-- Icons by FontAwesome -->
+<script type="text/javascript" src="/dashboard/Fluxer/fontawesome-free-5.0.8/svg-with-js/js/fontawesome-all.js"></script> 
+<!-- Main-Core CSS Stylesheet -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/main-core.css">
+<!-- React v.16.0 by Facebook -->
+<script src="/dashboard/Fluxer/react/react.production.min.js"></script>
+<script src="/dashboard/Fluxer/react/react-dom.production.min.js"></script>
+<!-- Babel, JSX Compiler -->
+<script type="text/javascript" src="/dashboard/Fluxer/react/babel.min.js"></script>
+
+</head>
+
+<body>
+  <!-- Header -->
+ <header class="container tt-normal" id="wallpaper">
+  <div class="container-7" id="user-info">
+    <div class="tt-up black" style="color: #fff;top: 3%;">
+    <a href="#" style="color: #fff;font-size: 0.6rem;" class="link">Cambiar Foto de Perfil</a>
+  </div>
+  <img src="loloplo.png" class="image image-profile" id="profile-photo">
+  <p class="heading-5" style="font-family: 'Open Sans', sans-serif;margin-top: 13%;margin-left: 1%;display: inline;" id="name-heading">Username
+    <br>
+  <small>@username</small>
+</p>
+
+  </div>
+  <span class="tt-down-np black" style="left: 80%;">
+  <a href="#" style="color: #fff;" id="tooltip">Cambiar Portada</a>
+</span>
+ </header>
+ <!-- / Header -->
+
+ <!-- Modal Wallpaper -->
+ <div class="container-6 modal modal-wallpaper" style="font-family: 'Open Sans', Helvetica, sans-serif;background: #fff;font-weight: lighter;">
+    <h1 class="heading-3 txt-center txt-grey">Hello World!</h1>
+      <div class="container-6">
+        
+      </div>
+  </div>
+  <!-- / Modal Wallpaper -->
+
+<!-- Post Container -->
+<div class="container-3 flx-gradient-classic sdw-basic">
+
+<h1 class="heading-4" id="name" style="padding: 2% 0% 1% 2%;font-family: 'Open Sans',sans-serif;color: #fff;"></h1>
+
+<div class="container" style="position: absolute;left: 29.5%;top: 34.5%;">
+  <ul class="fa-ul">
+    <li class="fa-li" style="margin-left: 10%;">
+     <a href="#"><i class="fas fa-camera" style="color: #fff;" onclick="SetPickOnPhoto();"></i></a>
+      <br>
+      <a href="#"><i class="fas fa-video" style="color: #fff;" onclick="SetPickOnVideo();"></i></a>
+      <br>
+      <a href="#"><i class="fas fa-pencil-alt" style="color: #fff;" onclick="SetPickOnText();"></i></a>
+    </li>
+  </ul>
+  </div>
+
+  <div class="container-8" id="root"></div>
+
+ <button class="button button-primary button-small" style="border-radius: 2%;margin: 0% 1% 2% 72%;">Publicar</button>
+
+</div>
+<!-- / Post Container -->
+
+<div class="container-3" id="timeline">
+  
+</div>
+
+<!-- React Scripts -->
+<!-- <script type="text/babel" src="/dashboard/Fluxer/react/scripts/react-charge-name.jsx"></script> -->
+<script type="text/babel" src="/dashboard/Fluxer/react/scripts/timeline.jsx"></script>
+<script type="text/babel" src="/dashboard/Fluxer/react/scripts/post-tooltips.jsx"></script>
+<!-- / React Scripts -->
+
+<!-- JS Scripts -->
+<script type="text/javascript" src="/dashboard/Fluxer/js/profile-script.js"></script>
+<!-- JS Scripts -->
+
+<!-- JQuery Scripts -->    
+<script type="text/javascript" src="/dashboard/Fluxer/JQuery/charge-username.js"></script>
+<script type="text/javascript" src="/dashboard/Fluxer/JQuery/charge-wallpaper.js"></script>
+<!-- / JQUery Scripts -->
+
+</body>
+</html>
