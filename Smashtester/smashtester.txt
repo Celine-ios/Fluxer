@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html language="es">
+<head>
+<title>SmashTester</title>
+<link rel="stylesheet" href="smashtester.css">
+<link rel="shortcut icon" href="sclogo.ico">
+<meta charset="utf-8">
+</head>
+<body>
+<div id="header">
+<img src="smashcocologo.jpeg" class="logo">
+</div>
+<div id="mid">
+<font face="arial" color="cadetblue">
+<h1 align="center">Descubre con quien cuadras mas</h1>
+<h3 align="center">Con un algoritmo patentado por nosotros</h3>
+<p align="left" id="firstperson">primera persona</p>
+<p align="right" id="secondperson">segunda persona</p>
+<input type="text" name="primera_persona" class="fptext" value="el empate" autocomplete="off" tabindex="-1">
+<input type="text" name="segunda_persona" class="sptext" value="el cuadre" autocomplete="off" tabindex="-1">
+<input type="submit" name="enviar" class="boton_envio">
+</font>
+</div>
+<div id="footer">
+<font face="arial" color="white">
+<p align="center">Holaaa "guapetones",creo que ya se han dado cuenta de lo que es.</p>
+<p align="center">Solo un pequeño algoritmo diseñado por mi (no por mi equipo) para probar y sugestionar con quien podrias llevarte mejor.</p>
+<p align="center">con un gran pedo,me despido.</p>
+<p align="center">Juan Guzman-Programador</p>
+ 
+
+

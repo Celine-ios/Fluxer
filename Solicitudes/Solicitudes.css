@@ -1,0 +1,132 @@
+﻿/* Solicitudes.css */
+
+body {
+	margin: auto;
+	width: 100%;
+	height: 1500px;
+	background: white;
+}
+#header {
+    position: fixed;
+    z-index: 1;
+    background: -webkit-linear-gradient(left,#349c68,blue);
+    width: 100%;
+    height: 100px;
+    margin: 0px;
+    border: 1px solid aqua;
+    border-radius: 12px;
+    box-shadow: #969696 5px 5px 10px;
+    -webkit-transition: border 0.3s ease 0.3s;
+}
+#header:hover {
+
+    border: 0px;
+    
+}
+#mid {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+}
+#Left_div {
+    position: absolute;
+    width: 600px;
+    top: 0px;
+    border-radius: 5px;
+    font-family: arial;
+    color: #349c68;
+    height: 1150px;
+    overflow: scroll;
+}
+#right_div {
+    font-family: arial;
+    color: white;
+    background: -webkit-linear-gradient(top,#349c68,blue);
+    top: 5px;
+    border-radius: 5px;
+    height: 1550px;
+    padding-left: 15px;
+    left: 600px;
+    position: absolute;
+}
+.tabla {
+    position: absolute;
+    width: 590px;
+}
+tr {
+    box-shadow: #969696 0px 5px 10px;
+    position: inherit;
+    height: 100px;
+}
+#Solicitude {
+    position: inherit;
+    padding-left: 130px;
+}
+.img {
+    border: 1px solid aqua;
+    width: 80px;
+    position: absolute;
+    left: 17px;
+    height: 74px;
+    border-radius: 200px;
+}
+.aceptar_boton {
+    background: #349c68;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+}
+.campo_busqueda {
+    position: absolute;
+    left: 750px;
+    top: 50px;
+    width: 350px;
+    border-bottom: 1px solid aqua;
+    background: transparent;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    padding-left: 10px;
+    font-family: arial;
+    color: white;
+}
+.boton_buscar {
+    position: absolute;
+    left: 1123px;
+    top: 50px;
+    border: 0px;
+    background: #349c68;
+    color: white;
+}
+.boton_buscar:hover {
+	background-color: blue;
+}
+#Emergent_window_acepted {
+    width: 390px;
+    font-family: arial;
+    color: cadetblue;
+    top: 371px;
+    left: 436px;
+    background: white;
+    padding-left: 39px;
+    height: 146px;
+    padding-top: 40px;
+    position: absolute;
+    border-radius: 5px;
+    visibility: hidden;
+    box-shadow: rgba(0, 0, 0, 0.88) 0px 0px 7px 1300px;
+}
+.Emergent_window_button {
+    position: absolute;
+    background: #349c68;
+    color: white;
+    border: 0px;
+    left: 320px;
+    top: 130px;
+    height: 30px;
+    border-radius: 5px;
+}
+h3.phrase_style {
+    font-size: 100%;
+    padding-top: 3%;
+}

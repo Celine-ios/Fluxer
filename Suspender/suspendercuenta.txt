@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html language="es"><!--falta por escribir la maldita hoja de estilos--><head>
+<title>Suspende tu Cuenta-SmashCoco</title>
+<link rel="stylesheet" href="suspendecuenta.css">
+<meta charset="utf-8">
+</head>
+<body>
+<div id="header">
+<img src="smashcocologo.png" class="logo">
+</div>
+<div id="mid">
+<h2 align="center">?Quieres Suspender tu Cuenta?</h2>
+<p align="center">Haz lo siguiente</p>
+  <p align="center">por favor responde a las siguientes preguntas</p>
+  <p align="left" style="position:absolute;left:270px;top:150px;">Tipo de Suspension</p>
+  <select name="tipo de suspension" tabindex="-1" style="position:absolute;left:300px;top:220px;">
+    <option>Temporal</option>
+    <option>Permanente</option>
+  </select>
+  <p align="right" style="position:absolute;top:150px;left:850px;">Tiempo de Suspension</p>
+  <select name="Tiempo de Suspension" style="position:absolute;top:220px;left:900px;">
+    <option>Meses</option>
+    <option>Años</option>
+  </select>
+  <p align="center" style="position:absolute;top:600px;left:300px">Despues de supender tu cuenta no podras-obviamente-usarla ni tampoco volver a entrar a tu perfil.</p>
+<p align="center" style="position:absolute;top:620px;left:120px;">para reactivar tu cuenta solo tienes que ir a configuracion y dar click a "contactanos" donde,si nos envias un correo, podremos reactivar tu cuenta en un instante</p>
+  <input type="submit" name="hecho" class="botonhecho">
+</div>
+<div id="footer">
+<p align="center">Creado por:</p>
+<p align="center">Juan Guzman-Programador</p>
+<p align="center">Ivan Mochniy-CEO</p>
+<p align="center">Joseph Fahmi-Director Creativo</p>
+<p align="center">Todos Los Derechos Reservados</p>
+<p align="center">2017-2018</p>
+</div>
+
+
+
+</body></html>

@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Fluxer</title>
+	<meta charset="utf-8">
+<!--	<meta http-equiv="refresh" content="3;url=http://www.advocar.com"> -->
+	<!-- Page Description -->
+	<meta name="description" content="Bienvenido a Fluxer, una red social personalizable en donde tú y sólo tú podrás
+	manejar tu vida social, tus amigos ya están en éste espacio,¡Pruébala!">
+	<!-- Page Classification -->
+	<meta name="classification" content="Red Social">
+	<!-- Page author -->
+	<meta name="author" content="Juan Guzman;Joseph Fahmi;Ivan Mochniy">
+	<!-- Just Keyworkds! -->
+	<meta name="keywords" content="amigos en internet,superman,batman,red social,helado,social network,friends,">
+	<!-- The Meta Viewport -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<!-- Main-Core Fluxer stylesheet -->
+	
+	<!-- Main CSS login stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/iniciosesion.css">
+	<!-- Icon -->
+	<link rel="shortcut icon" href="fluxer-icon.png">
+	<!-- Cabin Font by Google -->
+	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+	<!-- Main JS Login scripts -->
+	<script type="text/javascript" src="js/script_iniciosesion.js"></script>
+	<script type="text/javascript" src="js/validar_login.js"></script>
+	<!-- End of JS Scripts -->
+
+	<!-- React and ReactDOM by Facebook -->
+	<script src="react/react.production.min.js"></script>
+	<script src="react/react-dom.production.min.js"></script>
+	<!-- Babel, JSX Compiler -->
+	<script type="text/javascript" src="react/babel.min.js"></script>
+	<!-- Buttons Library -->
+	<link rel="stylesheet" href="css/btn.css">
+	<!-- Modals -->
+	<link rel="stylesheet" type="text/css" href="css/modals.css">
+	</head>
+	<body>
+	<div id="header">
+	<div id="logo-field">
+	<img src="fluxer-logo.svg" id="logo">
+	<h2 id="logo-text">Fluxer</h2>
+	</div>
+	<p class="texto">Contraseña</p>
+	<p class="texto_contraseña">E-mail</p>
+	<form method="post" action="php/scriptphp_iniciosesion.php" autocomplete="on"> 
+	<input type="email" name="email" class="caja" autofocus required onfocus="document.getElementById('remember_email').style.visibility='hidden'; document.getElementsByClassName('caja')[0].style.borderBottom='1px solid blue'; " onblur="document.getElementsByClassName('caja')[0].style.borderBottom='1px solid aqua'; document.getElementsByClassName('caja')[0].style.borderTop='none'; document.getElementsByClassName('caja')[0].style.borderRight='none'; document.getElementsByClassName('caja')[0].style.borderLeft='none';">
+	<input type="password" name="password" class="caja_contraseña" required onfocus="checker();" onkeyup="password_reconverter();" onblur="nofocus_changer();">
+	<div id="button_div" onmouseover="funny_button();">
+	<a href="#"><input type="submit" name="login" class="boton_aceptar" value="Dale"></a>
+	</div>
+	</form>
+	<div id="remember_email">
+		<p></p>
+	</div>
+	<div id="remember_password">
+		<p></p>
+	</div>
+
+	<div class="register-mobile">
+	<a href="Registro/"><p>Regístrate</p></a>
+	</div>
+
+<!-- Responsive Button -->
+<div id="responsive_container">
+  <button class="responsive_button">
+ <hr>
+ <hr>
+ <hr>
+  </button>
+</div>
+
+</div>
+<div id="fast_line"></div>
+<div id="mid">
+	<h2 align="center">¡Regístrate y Comparte con tus amigos!</h2>
+	<p align="center">Con Fluxer puedes hacerlo y mucho más</p>
+	<p align="center">Usa también FluxBump y Fluxter</p>
+	<p align="center" style="font-weight: bold;">Regístrate pulsando aquí</p>
+	<a href="Registro/"> <button class="btn" style="margin-left: 45%;">Regístrate</button> </a>
+	<aside>
+		<p align="center">Creado por:</p>
+		<p align="center">Juan Guzmán</p>
+		<p align="center">Joseph Fahmi</p>
+		<p align="center">Ivan Mochniy</p>
+	</aside>
+</div>
+<script type="text/babel">
+	ReactDOM.render(<h1>hello</h1>,document.getElementById('root'));
+</script>
+</body>
+</html> 
