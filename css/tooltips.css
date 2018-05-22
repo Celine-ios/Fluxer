@@ -8,6 +8,20 @@
 
    */
 
+   /* HOW TO USE */
+
+ /* Simply, for use it, you must to set a 'tt-normal' class
+ in your 'class' atribute and after that, you should to create a child
+ element 'span' tag containing one of the next classes:
+
+  * tt-up - For a go-up tooltip
+  *tt-down - For a go-down tooltip
+
+  PD: The np sufix is used to create a tooltip without picks
+
+  */
+
+
  .tt-pick {
 
  	  position: absolute;

@@ -63,8 +63,8 @@
 
 .flx-gradient-classic {
 
-	   background: -webkit-linear-gradient(left,#28a745,#007bff);
-   	   background: -moz-linear-gradient(left,#28a745,#007bff);
-   	   background: -o-linear-gradient(left,#28a745,#007bff);
-   	   background: -ms-linear-gradient(left,#28a745,#007bff);
+	  background: -webkit-linear-gradient(left,#22f59d,#0069ff);
+    background: -ms-linear-gradient(left,#22f59d,#0069ff);
+    background: -moz-linear-gradient(left,#22f59d,#0069ff);
+    background: -o-linear-gradient(left,#22f59d,#0069ff);
 }

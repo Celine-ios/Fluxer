@@ -1,0 +1,125 @@
+.out-border {
+
+    margin: 0 auto;
+    width: 40%;
+    border: 4em solid #fff;
+    height: 30em;
+    border-radius: 20%;
+    /*box-shadow: black 0px 0px 10px;*/
+    animation: bordercolor 8s infinite;
+
+}
+
+  .inside-circle {
+
+    width: 47%;
+    border: 3em solid #fff;
+    height: 15em;
+    margin: 0 auto;
+    margin-top: -6%;
+    border-radius: 47%;
+    /* box-shadow: #3ab78f 0px 0px 10px; */
+    animation: bordercolor 8s infinite;
+
+}
+
+	.little-circle {
+
+    	width: 7%;
+ 	   	height: 2rem;
+    	border: 1.5em solid #fff;
+    	margin-left: 75%;
+    	margin-top: 8%;
+    	border-radius: 50%;
+    	background: #fff;
+    	box-shadow: #04FAEE 0px 0px 10px;
+        /*animation: bordercolor 8s infinite;*/
+
+}
+
+	.other-out-border {
+
+ 	   	margin: 0 auto;
+    	width: 40%;
+    	border: 4em solid #fff;
+    	height: 30em;
+    	border-radius: 20%;
+    	/*box-shadow: inset #673ab7ff 0px 0px 10px, red 0px 0px 15px;*/
+    	position: absolute;
+    	top: 1%;
+    	left: 25%;
+        animation: bordercolor 8s infinite;
+
+}
+
+	.other-inside-circle {
+
+        position: absolute;
+        width: 47%;
+        border: 3em solid #fff;
+        left: 17.2%;
+        top: 19%;
+        height: 15em;
+        border-radius: 47%;
+        /* box-shadow: inset #FF9800 0px 0px 10px; */
+        animation: bordercolor 8s infinite;
+        
+}
+
+@keyframes bordercolor  {
+
+    0% {
+
+        box-shadow: inset #FF9800 0px 0px 10px, #FF9800 0px 0px 10px;
+
+    }
+
+    12.5% {
+
+        box-shadow: inset #673ab7ff 0px 0px 10px, #673ab7ff 0px 0px 15px;
+
+    }
+
+    25% {
+
+        box-shadow: #47b73a 0px 0px 10px, inset #47b73a 0px 0px 10px;
+
+    }
+
+    37.5% {
+
+        box-shadow: #3ab78f 0px 0px 10px, inset #3ab78f 0px 0px 10px;
+
+    }
+
+    50% {
+
+        box-shadow: #00ffff 0px 0px 15px, inset #00ffff 0px 0px 15px; 
+
+    }
+
+    62.5% {
+
+        box-shadow: magenta 0px 0px 10px, inset magenta 0px 0px 10px;
+
+    } 
+
+    75% {
+
+        box-shadow: hsl(0.0, 100.0%, 50.0%) 0px 0px 15px, inset hsl(0.0, 100.0%, 50.0%) 0px 0px 15px;
+
+    }
+
+    87.5% {
+
+        box-shadow: #ffc0cb 0px 0px 10px, inset #ffc0cb 0px 0px 10px;
+
+    }
+
+    100% {
+
+        box-shadow: rgba(255, 215, 0, 1.0) 0px 0px 15px, inset rgba(255, 215, 0, 1.0) 0px 0px 15px;
+
+    }
+
+}

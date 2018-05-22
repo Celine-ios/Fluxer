@@ -1,7 +1,7 @@
 <?php
 
-        include 'ConnectionClass.php';
-         include 'RegisterClass.php';
+        include 'class/ConnectionClass.php';
+         include 'class/RegisterClass.php';
    
     // SESSION VARIABLES
 

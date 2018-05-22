@@ -1,8 +1,8 @@
 <?php 
 #check_email.php
 
-		include 'ConnectionClass.php';
-    include 'RegisterClass.php';
+		include 'class/ConnectionClass.php';
+    include 'class/RegisterClass.php';
 
    $correo = $_GET['email'];
 

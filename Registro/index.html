@@ -3,7 +3,7 @@
 <head>
     <title>Fluxer</title>
     <link rel="stylesheet" type="text/css" href="../bootstrap.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="author" content="Juan Guzman">
     <meta name="description" content="registrarse friendspace,registro">
     <meta name="keywords" content="como registrarse en friendspace,registro,friendspace">
@@ -14,8 +14,10 @@
     <script type="text/javascript" src="/dashboard/Fluxer/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="/dashboard/Fluxer/js/requise_register.js"></script>
     <link rel="stylesheet" type="text/css" href="/dashboard/Fluxer/css/registro.css">
+    <link rel="stylesheet" href="/dashboard/Fluxer/css/colors-gradients.css">
+    <link rel="stylesheet" href="/dashboard/Fluxer/css/headings.css">  
     </head>
-    <body>
+    <body class="flx-gradient-classic">
       <style type="text/css">
         #create-space2 {
 
@@ -26,12 +28,26 @@
              transition: padding 1s ease 1s;
         }
       </style>
-        
-        <font size="5">
-     <h1 align="left">Fluxer</h1>
-            </font>
+<header class="header">
+  <img src="../fluxer-logo.svg" id="logo">
+    <div id="responsive_container">
+  <button class="responsive_button">
+ <hr>
+ <hr>
+ <hr>
+  </button>
+</div>
+</header>
+        <!-- Logo -->
+  <div class="container" id="form-holder">
+    <div class="container" style="width: 30%;display: flex;">
+  <img src="../fluxer-logo.svg" id="logo">
+ <h1 class="heading-2per5" style="width: 80%;margin-top:  19%;margin-left: 5%;">Fluxer</h1>
+ </div>
+  </div>
+        <!--/ Logo -->
        <div id="form-container">
-<form class="bs-example bs-example-form" role="form" method="post" action="/dashboard/Fluxer/php/register.php" style="width: 60%; margin: 0 auto;">
+<form class="bs-example bs-example-form" role="form" method="post" action="/dashboard/Fluxer/php/register.php" id="form-register">
 <div class="input-group">
 <span class="input-group-addon">@</span>
 <input type="text" class="form-control" placeholder="Dirección Cuenta" onfocus="change_address();" onblur="out();" name="direccion_cuenta" id="address" required>
@@ -48,6 +64,7 @@
 <input type="email" class="form-control" placeholder="email" onfocus="change_email();" onblur="out();" name="email" id="email" required>
 <span class="input-group-addon">.00</span>
 </div>
+
 <p style="color: red;margin: 0 auto;display: none;" class="existing-email">Éste Email está registrado</p>
 <br>
    <div class="input-group">

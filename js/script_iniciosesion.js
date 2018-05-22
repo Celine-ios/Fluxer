@@ -43,7 +43,8 @@ function funny_button() {
 function changer() {
 	
    document.getElementById('header').style.boxShadow='none';
-   document.getElementById('fast_line').style.width='100%';	
+   document.getElementById('fast_line').style.display='block';
+   document.getElementById('fast_line').style.width='100%';
 
 
 

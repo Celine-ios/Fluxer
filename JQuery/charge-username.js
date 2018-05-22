@@ -15,6 +15,7 @@ $(document).ready(function() {
 
 		 				$('#name').html('Hola '+user.name+'!');
             $('#name-heading').html(user.name+'<br>'+'<small>@'+user.username+'</small>');
+            //$('.title').text('@'+user.username);
 
 		 });
 

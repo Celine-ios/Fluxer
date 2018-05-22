@@ -1,16 +1,4 @@
-class Pick extends React.Component {
 
-
-	   render() {
-
-	   	   return (
-
-	   	   	<div className="tt-pick">
-	   	   	</div>
-
-	   	   	)
-	   }
-}
 class PostContainer extends React.Component {
 
 
@@ -19,7 +7,7 @@ class PostContainer extends React.Component {
 
 			return (
 
-<textarea className="container-7" cols="60" rows="4" style={{margin: '2% 10% 5% 10%',padding: '1%',fontFamily: '"Open Sans",sans-serif'}} placeholder="Sé Importante">
+<textarea className="container-7" cols="60" rows="4" style={{margin: '2% 10% 5% 5%',padding: '1%',fontFamily: '"Open Sans",sans-serif'}} placeholder="Sé Importante">
 </textarea>
 
 			)
@@ -35,7 +23,6 @@ class App extends React.Component {
 	  	  return (
 	  	  	
 	  	  	<div>
-            <Pick />
             <PostContainer />
             </div>
 			
@@ -81,6 +68,5 @@ ReactDOM.render(<App/>,document.getElementById('root'));
  	ReactDOM.render(elements,document.getElementById('root'));
 
  }
-
 
 

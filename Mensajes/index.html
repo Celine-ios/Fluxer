@@ -1,80 +1,166 @@
-﻿<!DOCTYPE html>
-<html language="es"><head>
-<title>Mensajes-Smashcoco</title> 
-<meta charset="utf-8">
-<meta name="refresh" content="1">
-<link rel="stylesheet" href="mensajes.css">
-<link rel="shortcut icon" href="Captura.png">
-<script type="text/javascript" src="script_message_send.js"></script>
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- ICON -->
+<link rel="shortcut icon" href="/dashboard/Fluxer/fluxericon.png">
+<!-- Characters Codification -->
+<meta charset="UTF-8">
+<title>Fluxer</title>
+<!-- Meta Viewport -->
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!-- JQuery Library V.3.2.1 -->
+<script type="text/javascript" src="/dashboard/Fluxer/jquery-3.2.1.min.js"></script>
+<!-- Fluxer CSS Stylesheets -->
+<!-- Containers -->  
+<link rel="stylesheet" href="/dashboard/Fluxer/css/containers.css">
+<!-- Profile CSS Core Stylesheet -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/core/messages.css">
+<!-- Headings -->
+<link rel="stylesheet" type="text/css" href="/dashboard/Fluxer/css/headings.css">
+<!-- Colors & Gradients -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/colors-gradients.css">
+<!-- Modals -->
+<link rel="stylesheet" type="text/css" href="/dashboard/Fluxer/css/modals.css">
+<!-- Buttons -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/buttons.css">
+<!-- Images -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/images.css">
+<!-- Shadows -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/shadows.css">
+<!-- Links -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/links.css">
+<!-- Text Position -->
+<link rel="stylesheet" type="text/css" href="/dashboard/Fluxer/css/text-position.css">
+<!-- Timeline -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/posts.css">
+<!-- Text Colors -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/text-colors.css">
+<!-- Inputs -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/inputs.css">
+<!-- Tootlips -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/tooltips.css">
+<!-- Tables -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/tables.css">
+<!-- Open Sans Font by Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<!-- Icons by FontAwesome -->
+<script type="text/javascript" src="/dashboard/Fluxer/fontawesome-free-5.0.8/svg-with-js/js/fontawesome-all.js"></script>
+<!-- Fonts by FontAwesome -->
+<script type="text/css" src="../css/fontawesome-all.css"></script> 
+<!-- Main-Core CSS Stylesheet -->
+<link rel="stylesheet" href="/dashboard/Fluxer/css/main-core.css">
+<!-- React v.16.0 by Facebook -->
+<script src="/dashboard/Fluxer/react/react.production.min.js"></script>
+<script src="/dashboard/Fluxer/react/react-dom.production.min.js"></script>
+<!-- Babel, JSX Compiler -->
+<script type="text/javascript" src="/dashboard/Fluxer/react/babel.min.js"></script>
+
 </head>
 <body>
-<div id="header">
-<font size="5"><h1 style="font-family: consolas;color: white;position: absolute;left: 15px;top: 40px;" align="left">FriendSpace</h1></font>
-<span style="color: white;font-family: consolas;top: 137px;position: absolute;font-size: small;left: 61px;">Your Friends,On this Space.</span>
-<input type="search" name="Busqueda_pag" class="campo_busqueda" placeholder="Busca a quien quieras">
-<input type="submit" name="Aceptar_busqueda" class="boton_buscar" value="Buscar">
+<div class="container-3 flx-gradient-classic sdw-strong" id="slider">
+  <div class="container-7" id="slider-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th style="width: 15%;">
+          <img src="../fluxer-logo.svg" alt="flx-logo" class="table-icon" style="width: 100%;">
+        </th>
+        <th style="margin-left:  5%;margin-top: 2%;"><a href="../Perfil/" class="txt-white">Fluxer</a></th>
+        </tr>
+        <tbody>
+          <tr>
+            <td>
+              <i class="fas fa-search"></i>
+            </td>    
+            <td>
+            <a href="../Busqueda/" class="link txt-white" style="margin-left: 13%;">Búsqueda</a>
+            
+          </td> 
+          </tr>
+          
+          <tr>
+            <td>
+              <i class="fas fa-envelope"></i>
+            </td>    
+            <td>
+          	<a href="../Mensajes/" class="link txt-white" style="margin-left: 14%;">Mensajes</a>
+            </td>
+          
+          </tr>
+          
+          <tr>
+            <td>
+            <i class="fas fa-paint-brush"></i>
+            </td>
+            <td>
+            <a href="#" class="link txt-white" style="margin-left: 9%;">Personalización</a>
+          </td>
+          </tr>
+          
+          <tr>
+            <td>
+            <i class="fas fa-cog"></i>
+            </td>
+            <td>
+          <a href="../Configuracion/" class="link txt-white" style="margin-left:  10%;">Configuración</a>
+          </td>
+          </tr>
+          
+          <tr>
+            <td><i class="fas fa-heart"></i></td>
+            <td>
+              <a href="#" class="link txt-white" style="margin-left: 12%;">FluxBump</a>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <i class="fas fa-hashtag"></i>
+            </td>
+            <td>
+              <a href="#" class="link txt-white" style="margin-left: 22.5%;">Fluxter</a>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <i class="fas fa-paper-plane"></i>
+            </td>
+            <td>
+              <a href="../Contactanos/" class="link txt-white" style="margin-left: 10%;">¡Conócenos!</a>
+            </td>
+          </tr>
+        </tbody>
+      </thead>
+    </table>
+    <footer class="container" style="margin-top: 150%;">
+      <p style="font-size: 0.6rem;">Fluxer Inc., 2018</p>
+    </footer>
+  </div>
 </div>
-<!--Comienzo de la mitad de la pagina-->
-<div id="mid">
-<div id="div_table">
-<table class="tabla">
-<tbody>
-<tr>
-<th class="recientes_recuadro">
-<p align="left" id="recientes">Recientes</p>
-</th>
-<td class="fprecuadro">
-<img src="loloplo.png" class="pimage">
-<a href=""><p id="pntext">Profile Name</p></a>
-<p id="pntext_2">hola como estas</p>
-</td>
+<aside class="fluxbump container-1" style="margin: 0% 2.5%;">
+  <div class="top flx-gradient-classic">
+    <h2 class="heading-4" style="margin-bottom: 12%;">FluxBump</h2>
+  </div>
+  <br>
+  <div class="fluxbump-body">
+    
+  </div>
+</aside>
+<article class="container messages-wrap">
+	<div class="container panels-wrap">
+		<div class="panel friends">
+			<h4>Amigos</h4>
+		</div>
+		<div class="panel messages">
+			<h4>Mensajes</h4>
+		</div>
+	</div>
+	<div class="container">
+		
+	</div>
+</article>
 
-<td class="sprecuadro">
-<img src="loloplo.png" class="pimage">
-<a href=""><p id="pntext">Profile Name</p></a>
-<p id="pntext_2">hola como estas</p>
-</td>
-<td class="tprecuadro">
-<img src="loloplo.png" class="pimage">
-<a href=""><p id="pntext">Profile Name</p></a>
-<p id="pntext_2">hola como estas</p>
-</td>
-<td class="forprecuadro">
-<img src="loloplo.png" class="pimage">
-<a href=""><p id="pntext">Profile Name</p></a>
-<p id="pntext_2">hola como estas</p>
-</td>
-<td class="fivprecuadro">
-<img src="loloplo.png" class="pimage">
-<a href=""><p id="pntext">Profile Name</p></a>
-<p id="pntext_2">hola como estas</p>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<!-- Recuadro de mensajes -->
-<div id="recuadromensajes">
-<div class="scroll_div">
-<div class="your_message"><p class="text_message"></p>
-</div>
-</div>
-<!-- Recuadro de envio de mensajes -->
-<div class="recuadroenvio">
-    <input type="text" name="mensaje" class="cajaenvio" placeholder="Escribe lo que quieras..." onkeyup="metric_box();" autofocus>
-  <input type="submit" name="botonenvio" class="botonenviar" onclick="changer();">
-    <input type="file" name="archivo" class="archivoenvio" value="nombre archivo">
-</div>
-</div>
-<!-- Ultima division -->
-<div id="footer">
-<p align="center">Creado por:</p>
-<p align="center">Juan Guzman-Programador</p>
-<p align="center">Ivan Mochniy-CEO</p>
-<p align="center">Joseph"Allahu Akbar"Fahmi-Director Creativo</p>
-
-</div>
+<script src="../JQUery/slider.js"></script>
 </body>
 </html>

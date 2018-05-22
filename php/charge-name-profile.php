@@ -2,7 +2,7 @@
 #charge-name-profile.php
    
     
-    include 'UserClass.php';
+    include 'class/UserClass.php';
 
     	$user = new UserClass();
 

@@ -1,0 +1,90 @@
+
+body {
+
+	display: flex;
+	flex-direction: row;
+
+}
+
+h4 {
+
+	margin: 0;
+
+}
+
+/* Slider style rules */
+#slider {
+
+	position: fixed;
+	z-index: 3;
+	height: 47rem;
+	width: 10%;
+    background: transparent;
+    box-shadow: none;
+    transition: all .3s;
+    color: #fff;
+    font-family: 'Open Sans', cursive;
+
+}
+
+#slider-container {
+
+	margin-top: 10%;
+	visibility: hidden;
+	
+
+}
+
+/* FluxBump Style Rules */
+.fluxbump {
+
+	font-family: 'Open Sans';
+	margin-left: 4%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+}
+
+.fluxbump .top {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    align-items: center;
+    border-radius: 0% 0% 3% 3%;
+
+}
+
+/* Slider style rules */
+.messages-wrap {
+
+    width: 70%;
+    margin: 2% 3% 2% 2%;
+
+}
+
+.panels-wrap {
+
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	border: 1px solid red;
+
+}
+
+.panel {
+
+	width: 50%;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+
+}
+
+.panel h4 {
+
+	margin: 2% 0%;
+
+}

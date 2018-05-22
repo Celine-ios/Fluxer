@@ -1,7 +1,7 @@
 <?php 
 #charge-wallpaper.php
 
-   include 'UserClass.php';
+   include 'class/UserClass.php';
 
 
    	  $user = new UserClass();

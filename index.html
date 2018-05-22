@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
+<!-- Head -->
 <head>
 	<title>Fluxer</title>
 	<meta charset="utf-8">
@@ -12,22 +13,22 @@
 	<!-- Page author -->
 	<meta name="author" content="Juan Guzman;Joseph Fahmi;Ivan Mochniy">
 	<!-- Just Keyworkds! -->
-	<meta name="keywords" content="amigos en internet,superman,batman,red social,helado,social network,friends,">
+	<meta name="keywords" content="amigos en internet,superman,batman,red social,helado,social network,friends,fluxer">
 	<!-- The Meta Viewport -->
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<!-- Main-Core Fluxer stylesheet -->
-	
 	<!-- Main CSS login stylesheet -->
-	<link rel="stylesheet" type="text/css" href="css/iniciosesion.css">
+	<link rel="stylesheet" type="text/css" href="css/core/iniciosesion.css">
 	<!-- Icon -->
-	<link rel="shortcut icon" href="fluxer-icon.png">
+	<link rel="shortcut icon" href="fluxericon.png">
 	<!-- Cabin Font by Google -->
 	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 	<!-- Main JS Login scripts -->
 	<script type="text/javascript" src="js/script_iniciosesion.js"></script>
 	<script type="text/javascript" src="js/validar_login.js"></script>
+	<!-- Shortcuts.js Script -->
+	<script src="js/core/shortcuts.js"></script>
 	<!-- End of JS Scripts -->
-
 	<!-- React and ReactDOM by Facebook -->
 	<script src="react/react.production.min.js"></script>
 	<script src="react/react-dom.production.min.js"></script>
@@ -35,9 +36,12 @@
 	<script type="text/javascript" src="react/babel.min.js"></script>
 	<!-- Buttons Library -->
 	<link rel="stylesheet" href="css/btn.css">
+	<!-- CSS Buttons Library -->
+	<link rel="stylesheet" href="css/buttons.css">
 	<!-- Modals -->
 	<link rel="stylesheet" type="text/css" href="css/modals.css">
 	</head>
+	<!-- / Head -->
 	<body>
 	<div id="header">
 	<div id="logo-field">
@@ -46,13 +50,19 @@
 	</div>
 	<p class="texto">Contraseña</p>
 	<p class="texto_contraseña">E-mail</p>
+	<!-- Login Form -->
 	<form method="post" action="php/scriptphp_iniciosesion.php" autocomplete="on"> 
+
 	<input type="email" name="email" class="caja" autofocus required onfocus="document.getElementById('remember_email').style.visibility='hidden'; document.getElementsByClassName('caja')[0].style.borderBottom='1px solid blue'; " onblur="document.getElementsByClassName('caja')[0].style.borderBottom='1px solid aqua'; document.getElementsByClassName('caja')[0].style.borderTop='none'; document.getElementsByClassName('caja')[0].style.borderRight='none'; document.getElementsByClassName('caja')[0].style.borderLeft='none';">
+
 	<input type="password" name="password" class="caja_contraseña" required onfocus="checker();" onkeyup="password_reconverter();" onblur="nofocus_changer();">
+
 	<div id="button_div" onmouseover="funny_button();">
 	<a href="#"><input type="submit" name="login" class="boton_aceptar" value="Dale"></a>
 	</div>
+
 	</form>
+	<!-- / Login Form -->
 	<div id="remember_email">
 		<p></p>
 	</div>
@@ -80,7 +90,9 @@
 	<p align="center">Con Fluxer puedes hacerlo y mucho más</p>
 	<p align="center">Usa también FluxBump y Fluxter</p>
 	<p align="center" style="font-weight: bold;">Regístrate pulsando aquí</p>
-	<a href="Registro/"> <button class="btn" style="margin-left: 45%;">Regístrate</button> </a>
+	<a href="Registro/" style="display: flex;justify-content:  center;text-decoration:  none;">
+		<button id="boton-registro" class="button button-primary">Regístrate</button>
+		</a>
 	<aside>
 		<p align="center">Creado por:</p>
 		<p align="center">Juan Guzmán</p>
@@ -90,6 +102,15 @@
 </div>
 <script type="text/babel">
 	ReactDOM.render(<h1>hello</h1>,document.getElementById('root'));
+</script>
+<script type="text/javascript">
+
+	shortcut.add("Ctrl+Shift+J",function() {
+
+	alert("Hello Juan Guzmán!");
+
+});
+
 </script>
 </body>
 </html> 

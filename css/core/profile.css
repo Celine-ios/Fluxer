@@ -9,37 +9,68 @@
 
    */
  
+ div textarea {
+
+	border: none;
+	transition: all 1s;
+	color: #fff;
+
+ }
+
+ div textarea:focus {
+
+	background: transparent;
+
+ }
+
  #wallpaper {
 
  	 color: #fff;
  	 padding: 0;
  	 display: flex;
+ 
  }
+
  #user-info {
 
  	display: flex;
  	margin: 0;
+ 
  }
+
  #profile-photo {
 
- 	 margin: 10% 1% 2% 2%;
+ 	 margin: 8% 1% 2% 2%;
+	 transition: all .3s;
+ 
  }
+
+#profile-photo:hover {
+
+	filter: blur(2px);
+
+}
+
  .user-name {
 
  	 font-family: 'Open Sans', sans-serif;
  	 margin-top: 13%;
  	 margin-left: 1%;
  	 display: inline;
+   
  }
+
  #icon-hand {
 
  	 display: block;
 
+ 
  }
 
  #icon-hand:hover {
 
- 	 color: #28a745 !important;
+ 	 color: #22f59d !important;
+ 
  }
 
  #icon-comment {
@@ -47,13 +78,129 @@
 
 	 display: block;
 
+ 
  }
 
  #icon-comment:hover {
 
-	color: #28a745 !important;
+	color: #22f59d !important;
 
- }	
+ 
+ }
 
- 	
+ #icons-container {
+
+ 	  position: absolute;
+ 	  left: 29.5%;
+ 	  top: 34.5%;
+ 
+ }
+
+ #icons-list {
+
+ 	display: block;
+ 
+ }
+
+ #file-wallpaper {
+
+ 	 margin-left: 2%;
+ 	 
+ 
+ }
+
+ td .link {
+
+	margin-left: 15%;
+
+ }
+
+ #file-wallpaper:before {
+
+	position: absolute;
+	content: "Selecciona tu imagen";
+	width: 52%;
+	height: 2rem;
+	background: #fff;
+	padding-left: 4%;
+	
+ 
+ }
+
+ #form-wallpaper {
+
+ 	margin: 2% 0% 4% 25%;
+ 
+ }
+
+ #button-wallpaper {
+
+ 	margin: 4% 0% 4% 18%;
+ 
+ }
+
+
+ #image-wallpaper {
+
+	margin: 0;
+ 	margin-left: 2.5%;
+ 	width: 90%;
+ 	height: auto;
+	display: none;
+ 
+ }
+
+#slider {
+
+	position: fixed;
+	z-index: 3;
+	height: 47rem;
+	width: 10%;
+    background: transparent;
+    box-shadow: none;
+    transition: all .3s;
+    color: #fff;
+    font-family: 'Open Sans', cursive;
+
+}
+
+#slider-container {
+
+	margin-top: 10%;
+	visibility: hidden;
+	
+
+}
+
+ @media screen and (max-width: 425px) {
+
+#icons-list {
+
+	display: flex;
+
+}
+
+#icons-container {
+
+	 position: absolute;
+	 left: 12%;
+	 top: 46.5%;
+
+}
+
+li a {
+
+	 margin-left: 25%;
+
+}
+
+.tt-pick {
+
+	display: none;
+
+}
+ 
+ }
+
+
 

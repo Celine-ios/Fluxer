@@ -1,8 +1,8 @@
 <?php 
 #check_address.php
 
-		include 'ConnectionClass.php';
-    include 'RegisterClass.php';
+		include 'class/ConnectionClass.php';
+    include 'class/RegisterClass.php';
 
    $direccion = $_GET['address'];
 

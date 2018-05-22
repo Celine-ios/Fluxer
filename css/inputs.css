@@ -30,10 +30,30 @@
 
   .input-comment:focus {
 
-	border-bottom: 1px solid #28a745;
+	border-bottom: 1px solid #22f59d;
+  animation: changecolor 6s infinite;
 
   }
   .input-comment::selection {
 
-  	  background: #007bff;
+  	  background: #0069ff;
+  }
+
+  @keyframes changecolor {
+
+  from {
+
+    border-bottom: 1px solid #0069ff;
+
+  }
+
+
+    to {
+
+    border-bottom: 1px solid #22f59d;
+
+    }
+
+
+
   }

@@ -1,8 +1,8 @@
 <?php 
 #register.php
 
-    include 'ConnectionClass.php';
-    include 'RegisterClass.php';
+    include 'class/ConnectionClass.php';
+    include 'class/RegisterClass.php';
 
    $direccion_cuenta = $_POST['direccion_cuenta'];
    $nombre_usuario = $_POST['nombre_usuario'];
