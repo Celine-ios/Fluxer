@@ -68,6 +68,7 @@ class TimelineContent extends React.Component {
 
 }
 
+
 	class Timeline extends React.Component {
 
 	/*	state = {
@@ -110,6 +111,20 @@ class TimelineContent extends React.Component {
 }
 
  var timeline_element = document.getElementById('timeline');
+
+   var ajax = new XMLHttpRequest();
+
+   ajax.onreadystatechange = function() {
+
+    if (this.readyState == 4 && this.status == 200) {
+
+     	alert(ajax.responseText);
+    }
+
+  };
+
+  ajax.open('get','../php/ajax/searchposts.php',true);
+  ajax.send();
 
   const posts = [{
 

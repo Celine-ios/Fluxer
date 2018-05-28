@@ -45,7 +45,7 @@ if (!$select) {
 
             $registerclass = new Register();
 
-          $register = $registerclass -> registerUser($direccion_cuenta,$nombre_usuario,$email,$password_cipher,$link,$test);	
+        $register = $registerclass -> registerUser($direccion_cuenta,$nombre_usuario,$email,$password_cipher,$link,$test);	
 
   			     if (! $register) {
   			     	
@@ -56,6 +56,20 @@ if (!$select) {
 
 
   			     }
+
+             //CREAR BASE DE DATOS PARA POSTS
+             // FALTAN COLUMNAS PARA LA BD
+             // FALTAN COLUMNAS PARA LA BD
+             // FALTAN COLUMNAS PARA LA BD
+             // FALTAN COLUMNAS PARA LA BD
+             // FALTAN COLUMNAS PARA LA BD
+             $sql = "CREATE TABLE ".$direccion_cuenta."posts(TITULO varchar(200),TIEMPO DATETIME(),PIE varchar(200000),NUMERO_COMENTARIOS INT(1000000),NUMERO_LIKES(1000000000))";
+             $query_create_post_db = mysqli_query($test, $sql);
+
+               if (! $query_create_post_db) {
+                  die("ERROR: ".mysqli_error($test));
+                  return;
+               }
 
                  $directory = mkdir('../Perfil/'.$direccion_cuenta.'/');
 
