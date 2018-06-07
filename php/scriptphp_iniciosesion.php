@@ -1,17 +1,22 @@
 <?php
 
-        include 'class/ConnectionClass.php';
-         include 'class/RegisterClass.php';
+        //include 'class/ConnectionClass.php';
+        include 'class/RegisterClass.php';
+        include 'class/UserClass.php';
+
    
     // SESSION VARIABLES
 
   $correo = $_POST['email'];
-  	$psswd = $_POST['password'];
-
+  $psswd = $_POST['password'];
+  $user = new UserClass();
+  $username = $user -> fetch_name();
+  
         session_start();
 
          $_SESSION['email'] = $correo;
          $_SESSION['password'] = $psswd;
+         $_SESSION['username'] = $username[1];
 
 
          // DATABASE CONNECTION VARIABLES
