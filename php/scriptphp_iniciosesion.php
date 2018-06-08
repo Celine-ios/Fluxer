@@ -4,20 +4,17 @@
         include 'class/RegisterClass.php';
         include 'class/UserClass.php';
 
-   
+
     // SESSION VARIABLES
 
   $correo = $_POST['email'];
   $psswd = $_POST['password'];
+  session_start();
+  $_SESSION['email'] = $correo;
+  $_SESSION['password'] = $psswd;
   $user = new UserClass();
   $username = $user -> fetch_name();
-  
-        session_start();
-
-         $_SESSION['email'] = $correo;
-         $_SESSION['password'] = $psswd;
-         $_SESSION['username'] = $username[1];
-
+  $_SESSION['username'] = $username[1];
 
          // DATABASE CONNECTION VARIABLES
 
@@ -43,7 +40,7 @@
       $select = $conn -> select_db($test,'fluxer');
 
          if (! $select) {
-           
+
 
                 die("No selected".mysqli_error($conn));
          }
@@ -51,10 +48,10 @@
           $registerclass = new Register();
 
         $query = $registerclass -> check_register($test,$correo);
-  	
+
 
   	      if (!$query) {
-  	      	
+
 
   	      	   die("Sorry, You are not registered".mysqli_error($conn));
 
@@ -69,7 +66,7 @@
                  //Verificar correo
 
                if ($row['CORREO'] == $correo) {
-                 
+
 
                        $cipher_password = $row['CONTRASENA'];
 
@@ -82,7 +79,7 @@
                              echo '<meta http-equiv="refresh" content="0.2;url=http://127.0.0.1/dashboard/Fluxer/Perfil/">';
 
                               return;
-                        
+
                       }
 
                        else {
@@ -111,6 +108,6 @@
 
 
                     mysqli_close($conn);
-  	       
+
 
 ?>

@@ -1,30 +1,28 @@
 <?php
 
   /**
-  * 
+  *
   */
 
    include 'ConnectionClass.php';
- 
+
   class UserClass
   {
 
   	  private $email;
   	  private $password;
-  	
+
   	function __construct()
   	{
-  		 session_start();
-  		
-  		$this -> email = $_SESSION['email'];
-  		$this -> password = $_SESSION['password'];
-
+        session_start();
+        $this -> email = $_SESSION['email'];
+        $this -> password = $_SESSION['password'];
 
   	}
 
   	 function fetch_name() {
 
-        
+
              $conn = new Connection();
 
                $test = $conn -> connect();
@@ -46,7 +44,7 @@
 
     function fetch_wallpaper()
     {
-      
+
          $conn = new Connection();
 
             $test = $conn -> connect();
@@ -81,7 +79,7 @@
               $query = mysqli_query($test, $sql);
 
               if ($query) {
-                
+
                 return true;
 
               }
@@ -95,4 +93,3 @@
   }
 
  ?>
-  
