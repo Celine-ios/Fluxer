@@ -1,0 +1,30 @@
+nav {
+  display: block;
+}
+.navbar-horizontal {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 360px) {
+
+  .navbar {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+  }
+  .navbar-horizontal {
+    overflow-x: auto;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 1% 0;
+  }
+  .navbar-horizontal a {
+    margin: 0% 4% 8% 0%;
+    white-space: nowrap;
+  }
+
+}
