@@ -89,7 +89,7 @@ if (!$select) {
 
                       $to = $email;
                       $title = 'Bienvenido a Fluxer, Empieza a compartir memes';
-                      $message = '<html>'.
+                      $message = '<!DOCTYPE html><html>'.
                     '<head><title>Email con HTML</title></head>'.
                       '<body><h1>Email con HTML</h1>'.
                       'Esto es un email que se envía en el formato HTML'.
@@ -100,7 +100,7 @@ if (!$select) {
 
                       $headers = 'MIME-Version: 1.0' . "\r\n";
                       $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-                      $headers .= 'From: support@fluxer.io';
+                      $headers .= 'From: Fluxer <support@fluxer.io>';
 
                       $send = mail($to, $title, $message, $headers);
 
