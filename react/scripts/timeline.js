@@ -121,7 +121,7 @@ class TimelineContent extends React.Component {
     var posts = JSON.parse(this.responseText);
     console.log(ajax.responseText);
 
-  	 ReactDOM.render(<Timeline activity={posts}/>,timeline_element);
+  	ReactDOM.render(<Timeline activity={posts}/>,timeline_element);
     
     }
 

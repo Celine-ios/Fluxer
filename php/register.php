@@ -87,7 +87,22 @@ if (!$select) {
                       mkdir('../Perfil/'.$direccion_cuenta.'/videos'.'/');
                       mkdir('../Perfil/'.$direccion_cuenta.'/music'.'/');
 
-                    
+                      $to = $email;
+                      $title = 'Bienvenido a Fluxer, Empieza a compartir memes';
+                      $message = '<html>'.
+                    '<head><title>Email con HTML</title></head>'.
+                      '<body><h1>Email con HTML</h1>'.
+                      'Esto es un email que se envía en el formato HTML'.
+                      '<hr>'.
+                      'Enviado por mi programa en PHP'.
+                      '</body>'.
+                      '</html>';
+
+                      $headers = 'MIME-Version: 1.0' . "\r\n";
+                      $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+                      $headers .= 'From: support@fluxer.io';
+
+                      $send = mail($to, $title, $message, $headers);
 
   			     echo '<meta http-equiv="refresh" content="0.2;url=http://127.0.0.1/dashboard/Fluxer/">' ;
 
