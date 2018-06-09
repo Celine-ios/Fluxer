@@ -21,7 +21,7 @@
 	}
 	// Fetch Response
 	$row = mysqli_fetch_array($query, MYSQLI_BOTH);
-	echo var_dump($row);
+	echo json_encode($row); 
 	
 
  ?>

@@ -30,8 +30,8 @@ class TimelineContent extends React.Component {
 			<div className="avatar">
  			<img alt='doug' src="http://www.croop.cl/UI/twitter/images/doug.jpg"/>
 			</div>
-		<span className="time">Hace una hora</span>
-		<p>Hola</p>
+		<span className="time">{post.time}</span>
+		<p>{post.footer}</p>
 		</div>
 		<article className="article container-8">
 			<img src="http://127.0.0.1/dashboard/Fluxer/Perfil/images/juanpablo/logo-og.png" className="container-8"/>
@@ -118,29 +118,40 @@ class TimelineContent extends React.Component {
 
     if (this.readyState == 4 && this.status == 200) {
 
-     	alert(ajax.responseText);
+    var post = JSON.parse(this.responseText);
+    alert(ajax.responseText);
+
+    const posts = [{
+
+  	title: post.TITULO,
+  	comments: post.NUMERO_COMENTARIOS,
+  	likes: post.NUMERO_LIKES,
+  	footer: post.PIE,
+  	time: post.TIEMPO
+
+  	}, {
+
+  	title: post.TITULO,
+  	comments: post.NUMERO_COMENTARIOS,
+  	likes: post.NUMERO_LIKES,
+  	footer: post.PIE,
+  	time: post.TIEMPO
+
+  	}];
+
+  	 ReactDOM.render(<Timeline activity={posts}/>,timeline_element);
+    
     }
 
   };
 
-  ajax.open('get','../php/ajax/searchposts.php',true);
-  ajax.send();
+  
+  	ajax.open('get','../php/ajax/searchposts.php',true);
+  	ajax.send();
 
-  const posts = [{
+  
 
-  	title: '@juan',
-  	comments: 23,
-  	likes: 12
-
-  	}, {
-
-  	title: '@zuck',
-  	comments: 23,
-  	likes: 12
-
-  	}];
-
-   ReactDOM.render(<Timeline activity={posts}/>,timeline_element);
+ 
 
   
 
