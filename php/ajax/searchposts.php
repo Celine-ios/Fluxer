@@ -20,8 +20,10 @@
 		return;
 	}
 	// Fetch Response
-	$row = mysqli_fetch_array($query, MYSQLI_BOTH);
-	echo json_encode($row); 
-	
+	$posts_array = array();
+	while ($row = mysqli_fetch_array($query, MYSQLI_BOTH)) {
+		 	array_push($posts_array, $row);
+		 }
+	echo json_encode($posts_array);
 
  ?>

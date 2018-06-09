@@ -63,7 +63,7 @@ if (!$select) {
              // FALTAN COLUMNAS PARA LA BD
              // FALTAN COLUMNAS PARA LA BD
              // FALTAN COLUMNAS PARA LA BD
-             $sql = "CREATE TABLE ".$direccion_cuenta."posts(TITULO varchar(200),TIEMPO DATETIME,PIE varchar(200000),NUMERO_COMENTARIOS BIGINT(200),NUMERO_LIKES INT(200))";
+             $sql = "CREATE TABLE ".$direccion_cuenta."posts(title varchar(200),time DATETIME,footer varchar(200000),comments BIGINT(200),likes INT(200))";
 
              $query_create_post_db = mysqli_query($test, $sql);
 

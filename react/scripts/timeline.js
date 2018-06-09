@@ -118,33 +118,14 @@ class TimelineContent extends React.Component {
 
     if (this.readyState == 4 && this.status == 200) {
 
-    var post = JSON.parse(this.responseText);
-    alert(ajax.responseText);
-
-    const posts = [{
-
-  	title: post.TITULO,
-  	comments: post.NUMERO_COMENTARIOS,
-  	likes: post.NUMERO_LIKES,
-  	footer: post.PIE,
-  	time: post.TIEMPO
-
-  	}, {
-
-  	title: post.TITULO,
-  	comments: post.NUMERO_COMENTARIOS,
-  	likes: post.NUMERO_LIKES,
-  	footer: post.PIE,
-  	time: post.TIEMPO
-
-  	}];
+    var posts = JSON.parse(this.responseText);
+    console.log(ajax.responseText);
 
   	 ReactDOM.render(<Timeline activity={posts}/>,timeline_element);
     
     }
 
   };
-
   
   	ajax.open('get','../php/ajax/searchposts.php',true);
   	ajax.send();
