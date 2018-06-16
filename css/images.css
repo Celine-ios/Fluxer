@@ -38,5 +38,11 @@
 
    	   
    }
-
-   
+  .image-hidden-modal {
+    margin: 0;
+    margin-left: 2.5%;
+    width: 90%;
+    height: auto;
+    display: none;
+ 
+     }

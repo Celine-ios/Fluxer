@@ -2,58 +2,60 @@
 <html language="es">
 <head>
 <!-- ICON -->
-<link rel="shortcut icon" href="/dashboard/Fluxer/fluxericon.png">
+<link rel="shortcut icon" href="../fluxericon.png">
 <!-- Characters Codification -->
 <meta charset="UTF-8">
 <title>Fluxer</title>
 <!-- Meta Viewport -->
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <!-- JQuery Library V.3.2.1 -->
-<script type="text/javascript" src="/dashboard/Fluxer/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="../jquery-3.2.1.min.js"></script>
 <!-- Fluxer CSS Stylesheets -->
 <!-- Profile CSS Core Stylesheet -->
-<link rel="stylesheet" href="/dashboard/Fluxer/css/core/profile.css">
+<link rel="stylesheet" href="../css/core/profile.css">
 <!-- Containers -->  
-<link rel="stylesheet" href="/dashboard/Fluxer/css/containers.css">
+<link rel="stylesheet" href="../css/containers.css">
 <!-- Headings -->
-<link rel="stylesheet" type="text/css" href="/dashboard/Fluxer/css/headings.css">
+<link rel="stylesheet" type="text/css" href="../css/headings.css">
 <!-- Colors & Gradients -->
-<link rel="stylesheet" href="/dashboard/Fluxer/css/colors-gradients.css">
+<link rel="stylesheet" href="../css/colors-gradients.css">
 <!-- Modals -->
-<link rel="stylesheet" type="text/css" href="/dashboard/Fluxer/css/modals.css">
+<link rel="stylesheet" type="text/css" href="../css/modals.css">
 <!-- Buttons -->
-<link rel="stylesheet" href="/dashboard/Fluxer/css/buttons.css">
+<link rel="stylesheet" href="../css/buttons.css">
 <!-- Images -->
-<link rel="stylesheet" href="/dashboard/Fluxer/css/images.css">
+<link rel="stylesheet" href="../css/images.css">
 <!-- Shadows -->
-<link rel="stylesheet" href="/dashboard/Fluxer/css/shadows.css">
+<link rel="stylesheet" href="../css/shadows.css">
+<!-- Files -->
+<link rel="stylesheet" href="../css/files.css">
 <!-- Links -->
-<link rel="stylesheet" href="/dashboard/Fluxer/css/links.css">
+<link rel="stylesheet" href="../css/links.css">
 <!-- Text Position -->
-<link rel="stylesheet" type="text/css" href="/dashboard/Fluxer/css/text-position.css">
+<link rel="stylesheet" type="text/css" href="../css/text-position.css">
 <!-- Timeline -->
-<link rel="stylesheet" href="/dashboard/Fluxer/css/posts.css">
+<link rel="stylesheet" href="../css/posts.css">
 <!-- Text Colors -->
-<link rel="stylesheet" href="/dashboard/Fluxer/css/text-colors.css">
+<link rel="stylesheet" href="../css/text-colors.css">
 <!-- Inputs -->
-<link rel="stylesheet" href="/dashboard/Fluxer/css/inputs.css">
+<link rel="stylesheet" href="../css/inputs.css">
 <!-- Tootlips -->
-<link rel="stylesheet" href="/dashboard/Fluxer/css/tooltips.css">
+<link rel="stylesheet" href="../css/tooltips.css">
 <!-- Tables -->
-<link rel="stylesheet" href="/dashboard/Fluxer/css/tables.css">
+<link rel="stylesheet" href="../css/tables.css">
 <!-- Open Sans Font by Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <!-- Icons by FontAwesome -->
-<script type="text/javascript" src="/dashboard/Fluxer/fontawesome-free-5.0.8/svg-with-js/js/fontawesome-all.js"></script>
+<script type="text/javascript" src="../fontawesome-free-5.0.8/svg-with-js/js/fontawesome-all.js"></script>
 <!-- Fonts by FontAwesome -->
 <script type="text/css" src="../css/fontawesome-all.css"></script> 
 <!-- Main-Core CSS Stylesheet -->
-<link rel="stylesheet" href="/dashboard/Fluxer/css/main-core.css">
+<link rel="stylesheet" href="../css/main-core.css">
 <!-- React v.16.0 by Facebook -->
-<script src="/dashboard/Fluxer/react/react.production.min.js"></script>
-<script src="/dashboard/Fluxer/react/react-dom.production.min.js"></script>
+<script src="../react/react.production.min.js"></script>
+<script src="../react/react-dom.production.min.js"></script>
 <!-- Babel, JSX Compiler -->
-<script type="text/javascript" src="/dashboard/Fluxer/react/babel.min.js"></script>
+<script type="text/javascript" src="../react/babel.min.js"></script>
 </head>
 
 <body>
@@ -144,7 +146,7 @@
  <header class="container tt-normal" id="wallpaper">
  <div class="container-7" id="user-info" style="width: 100%;">
     <div class="tt-up black" style="color: #fff;top: 3%;">
-    <a href="#" style="color: #fff;font-size: 0.6rem;" class="link">Cambiar Foto de Perfil</a>
+    <a href="#" style="color: #fff;font-size: 0.6rem;" class="link" id="profile-tooltip">Cambiar Foto de Perfil</a>
   </div>
   <img src="loloplo.png" class="image image-profile" id="profile-photo">
   <p class="heading-5" style="font-family: 'Open Sans', sans-serif;margin-top: 11%;margin-left: 1%;display: inline;" id="name-heading">Username
@@ -166,10 +168,9 @@
         <br>
         <form action="../php/process_wallpaper.php" method="post" enctype="multipart/form-data" class="container" id="form-wallpaper">
           <div class="container-5" style="margin: 0;margin-left: 3%;">
-            <img src="#" class="image" id="image-wallpaper">
+            <img src="#" class="image image-hidden-modal">
           </div>
-
-          <input type="file" name="wallpaper" id="file-wallpaper" class="button button-plain-flat">
+          <input type="file" name="wallpaper" id="file-wallpaper" class="file button button-plain-flat">
           <br>
           <input type="submit" class="button button-primary-flat" id="button-wallpaper" value="Aceptar">  
         </form>
@@ -177,13 +178,29 @@
   </div>
   <!-- / Modal Wallpaper -->
 
+  <!-- Modal Profile -->
+ <div class="container-6 modal modal-wallpaper" style="font-family: 'Open Sans', Helvetica, sans-serif;background: #fff;font-weight: lighter;" id="modal-profile">
+    <h1 class="heading-3 txt-center txt-grey">Empieza a Ser Importante</h1>
+      <div class="container-6">
+        <h3 class="txt-center txt-grey" style="margin-right: 3.7%;">Cambia tu Imagen de Perfil</h3>
+        <br>
+        <form action="../php/process_wallpaper.php" method="post" enctype="multipart/form-data" class="container" id="form-wallpaper">
+          <div class="container-5" style="margin: 0;margin-left: 3%;">
+            <img src="#" class="image image-hidden-modal">
+          </div>
+
+          <input type="file" name="wallpaper" id="file-wallpaper-profile" class="file button button-plain-flat">
+          <br>
+          <input type="submit" class="button button-primary-flat" id="button-wallpaper" value="Aceptar">  
+        </form>
+      </div>
+  </div>
+  <!-- / Modal Profile -->
+
 <!-- Post Container -->
 <div class="container-3 flx-gradient-classic sdw-basic">
-
 <h1 class="heading-4" id="name" style="padding: 2% 0% 1% 5%;font-family: 'Open Sans',sans-serif;color: #fff;"></h1>
-
   <div class="container-8" id="root"></div>
-
 <div class="container" style="margin: 0% 13%;padding-bottom:  3%;display: flex;justify-content:  flex-end;">
  <button class="button button-primary button-small" style="border-radius: 2%;font-size: .6rem;" id="button">Publicar</button> 
 </div>
@@ -193,7 +210,7 @@
   <img src="../Multimedia/GIF/circle.gif" style="width: 50%;height: 10em;">
 </div>
 <!-- React Scripts -->
-<!-- <script type="text/babel" src="/dashboard/Fluxer/react/scripts/react-charge-name.jsx"></script> -->
+<!-- <script type="text/babel" src="../react/scripts/react-charge-name.jsx"></script> -->
 <script type="text/babel" src="../react/scripts/TimelineContent.js"></script>
 <script type="text/babel" src="../react/scripts/timeline.js"></script>
 <script type="text/babel" src="../react/scripts/post-tooltips.jsx"></script>
@@ -201,13 +218,13 @@
 <!-- Fluxer JS Scripts -->
 <!-- Core -->
 <!-- Modals -->
-<script src="/dashboard/Fluxer/js/core/modals.js"></script>
+<script src="../js/core/modals.js"></script>
 <!-- ShortCuts -->
 <script src="../js/core/shortcuts.js"></script>
 <script type="text/javascript" src="../js/modals-shortcuts.js"></script>
 <!-- / Core -->
 <!-- JS Scripts -->
-<script type="text/javascript" src="/dashboard/Fluxer/js/profile-script.js"></script>
+<script type="text/javascript" src="../js/profile-script.js"></script>
 <!-- JS Scripts -->
 <!-- JQuery Scripts -->    
 <script type="text/javascript" src="../JQuery/charge-username.js"></script>

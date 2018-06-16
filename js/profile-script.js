@@ -1,6 +1,6 @@
 //profile-script.js
 
-function preview_wallpaper(input) {
+function preview_wallpaper(input, type) {
   
    if (input.files && input.files[0]) {
 
@@ -9,7 +9,29 @@ function preview_wallpaper(input) {
         
      reader.onload = function (e) {
 
-         
+          if(type == 'profile') {
+
+            $('#image-wallpaper-profile').css('display','block');        
+
+        $('#image-wallpaper-profile').attr('src', e.target.result);
+
+         var nombre = input.files[0].name;
+            
+             var formato = nombre.split('.');
+
+
+
+             if ((formato[1] != 'jpg') && (formato[1] != 'png')) {
+
+
+                    alert("Éste tipo de archivos no pueden ser subidos");
+
+                      
+                     return;
+               }
+
+            return;
+          }
         $('#image-wallpaper').css('display','block');        
 
         $('#image-wallpaper').attr('src', e.target.result);
@@ -94,9 +116,21 @@ function preview_wallpaper(input) {
 
        wallpaper.addEventListener('change',function(){
 
-            preview_wallpaper(this);
+            preview_wallpaper(this, 'wallpaper');
 
        } ,false);
+
+       var modal_profile = document.getElementsByClassName('modal')[1];
+       var tooltip_profile = document.getElementById('profile-tooltip');
+       var wallpaper_profile = document.getElementById('file-wallpaper-profile');
+
+       tooltip_profile.addEventListener('click', function() {
+          show_modal(modal_profile);
+       }, false);
+       wallpaper_profile.addEventListener('change', function() {
+          preview_wallpaper(this, 'profile');
+       }, false);
+
 
 
     }

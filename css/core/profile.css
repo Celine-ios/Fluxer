@@ -102,29 +102,10 @@
  
  }
 
- #file-wallpaper {
-
- 	 margin-left: 2%;
- 	 
- 
- }
-
  td .link {
 
 	margin-left: 15%;
 
- }
-
- #file-wallpaper:before {
-
-	position: absolute;
-	content: "Selecciona tu imagen";
-	width: 52%;
-	height: 2rem;
-	background: #fff;
-	padding-left: 4%;
-	
- 
  }
 
  #form-wallpaper {
@@ -136,17 +117,6 @@
  #button-wallpaper {
 
  	margin: 4% 0% 4% 18%;
- 
- }
-
-
- #image-wallpaper {
-
-	margin: 0;
- 	margin-left: 2.5%;
- 	width: 90%;
- 	height: auto;
-	display: none;
  
  }
 
