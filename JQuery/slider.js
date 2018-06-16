@@ -1,6 +1,6 @@
 $('#slider').mouseover(function() {
-
-      $('#slider').css('width','25%');
+      var width = screen.width;
+      width < 425 ? $('#slider').css('width','65%') : $('#slider').css('width','25%'); 
       $('#slider').css('background','-webkit-linear-gradient(left,#22f59d,#0069ff)');
       $('#slider').css('box-shadow','#00000073 20px 0px 100px');
       $('#slider-container').css('visibility','visible');

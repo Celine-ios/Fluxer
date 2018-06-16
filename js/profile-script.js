@@ -43,13 +43,10 @@ function preview_wallpaper(input) {
 
  function responsive_charge() {
 
-
-             var ancho = screen.width;
-
-               
+      var ancho = screen.width;
+            
               if (ancho <= 425) {
 
-              		
               	var post_container = document.getElementById('timeline');
 
               			post_container.classList.remove('container-3');
@@ -65,6 +62,14 @@ function preview_wallpaper(input) {
                        var button = document.getElementById('button');
 
                         button.style.margin="0% 1% 4% 56.5%";
+
+                        var likes_number = document.getElementsByClassName('likes').length;
+                        alert(likes_number);
+                        for(index = 0; index < likes_number; index++) {
+                          document.getElementsByClassName('likes')[index].style.width='50%';
+                        document.getElementsByClassName('comment')[index].style.width='50%';
+                        document.getElementsByClassName('title')[index].style.paddingTop='5%';
+                        }
 
               	    return;
 
@@ -97,28 +102,4 @@ function preview_wallpaper(input) {
     }
 
  window.addEventListener('load',responsive_charge,false);
-
- 
-        
-
-  $('#slider').mouseover(function() {
-
-      $('#slider').css('width','25%');
-      $('#slider').css('background','-webkit-linear-gradient(left,#22f59d,#0069ff)');
-      $('#slider').css('box-shadow','#00000073 20px 0px 100px');
-      $('#slider-container').css('visibility','visible');
-
-  });
-
-  $('#slider').mouseout(function() {
-
-    $('#slider').css('width','10%');
-      $('#slider').css('background','transparent');
-      $('#slider').css('box-shadow','none');
-      $('#slider-container').css('visibility','hidden');
-
-  });
-
-
-
     

@@ -38,7 +38,7 @@ class TimelineContent extends React.Component {
 		<section className="container">
 			<div className="container" id="reactions-hub">
 			<div className="likes">
-				<i class="far fa-hand-peace"></i>
+				<i className="far fa-hand-peace"></i>
 				<p>{post.likes}</p>					
 			</div>
 
@@ -48,6 +48,7 @@ class TimelineContent extends React.Component {
 					</div>
 				</div>
 		</section>
+		<hr />
 		<footer className="item">
 		<div className="container">
 		<div className="avatar">
@@ -60,8 +61,7 @@ class TimelineContent extends React.Component {
 		</footer>				
 	  </div>
 	  </div>
-	  </div>
-
+	</div>
 		)
 	}
 

@@ -119,8 +119,6 @@ class TimelineContent extends React.Component {
     if (this.readyState == 4 && this.status == 200) {
 
     var posts = JSON.parse(this.responseText);
-    console.log(ajax.responseText);
-
   	ReactDOM.render(<Timeline activity={posts}/>,timeline_element);
     
     }
