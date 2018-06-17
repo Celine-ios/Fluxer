@@ -5,36 +5,25 @@ function preview_wallpaper(input, type) {
    if (input.files && input.files[0]) {
 
         var reader = new FileReader();
-
-        
-     reader.onload = function (e) {
-
+        reader.onload = function (e) {
           if(type == 'profile') {
 
-            $('#image-wallpaper-profile').css('display','block');        
+            $('.image-hidden-modal').css('display','block');        
 
-        $('#image-wallpaper-profile').attr('src', e.target.result);
+        $('.image-hidden-modal').attr('src', e.target.result);
 
-         var nombre = input.files[0].name;
-            
+            var nombre = input.files[0].name;
              var formato = nombre.split('.');
-
-
-
              if ((formato[1] != 'jpg') && (formato[1] != 'png')) {
-
-
                     alert("Éste tipo de archivos no pueden ser subidos");
-
-                      
                      return;
                }
-
-            return;
+              return;
           }
-        $('#image-wallpaper').css('display','block');        
 
-        $('#image-wallpaper').attr('src', e.target.result);
+        $('.image-hidden-modal').css('display','block');        
+
+        $('.image-hidden-modal').attr('src', e.target.result);
 
          var nombre = input.files[0].name;
             

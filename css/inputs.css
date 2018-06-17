@@ -26,8 +26,12 @@
 
 .input-comment:focus {
   border-bottom: 1px solid #22f59d;
-  animation: changecolor 6s infinite;
+  -webkit-animation: changecolor 6s infinite;
+          animation: changecolor 6s infinite;
 
+  }
+  .input-comment::-moz-selection {
+  background: #0069ff;
   }
   .input-comment::selection {
   background: #0069ff;
@@ -37,6 +41,14 @@
   }
   .input-search-xl {
   width: 60%;
+  }
+  @-webkit-keyframes changecolor {
+  from {
+  border-bottom: 1px solid #0069ff;
+  }
+  to {
+  border-bottom: 1px solid #22f59d;
+  }
   }
   @keyframes changecolor {
   from {

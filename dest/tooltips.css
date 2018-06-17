@@ -1,0 +1,105 @@
+/* tooltips.css */
+/*
+
+  A Fluxer Stylesheet 
+  2018
+  Coded by: Juan Guzmán
+  CEO and Founder 
+
+   */
+
+   /* HOW TO USE */
+
+ /* Simply, for use it, you must to set a 'tt-normal' class
+ in your 'class' atribute and after that, you should to create a child
+ element 'span' tag containing one of the next classes:
+
+  * tt-up - For a go-up tooltip
+  *tt-down - For a go-down tooltip
+
+  PD: The np sufix is used to create a tooltip without picks
+
+  */
+
+
+ .tt-pick {
+
+ 	  position: absolute;
+ 	  width: 20px;
+ 	  height: 20px;
+ 	  background: #fff;
+ 	  -webkit-transform: rotate(45deg);
+ 	          transform: rotate(45deg);
+ 	  margin-left: 3.8%;
+ 	  margin-top: 1.8%;
+ 	  z-index: 1;
+ 	  transition: top 0.5s ease 1s;
+ }
+
+ .tt-normal .tt-up {
+
+	  position: absolute;
+	  display: none;
+	  width: 10%;
+	  height: 2.5%;
+	  font-size: 0.6rem;
+	  font-family: 'Open Sans',sans-serif;
+	  padding: 1%;
+	  border-radius: 2%;
+	  transition: box-shadow 0.5s ease-in 1s;
+	  opacity: 0.5;
+
+ }
+
+ .tt-normal .tt-up:after {
+
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 48%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #312F2F transparent transparent transparent;
+ }
+
+ .tt-normal:hover .tt-up {
+	 
+	  display: block;
+	 
+ }
+
+ .tt-normal .tt-up:hover {
+
+ 	  box-shadow: #00000073 0px 0px 10px 6px;
+ 	  opacity: 1;
+ }
+
+ .tt-normal .tt-down-np {
+
+	  position: absolute;
+	  display: none;
+	  width: 10%;
+	  height: 2.5%;
+	  font-size: 0.6rem;
+	  font-family: 'Open Sans',sans-serif;
+	  padding: 1%;
+	  border-radius: 2%;
+	  transition: box-shadow 0.5s ease-in 1s;
+	  opacity: 0.5;	  
+
+ }
+
+ .tt-normal:hover .tt-down-np {
+
+ 	  display: block;
+ }
+ 
+ .tt-normal .tt-down-np:hover {
+
+	  box-shadow: #00000073 0px 0px 10px 6px;
+ 	  opacity: 1;
+
+ }
+
+ 

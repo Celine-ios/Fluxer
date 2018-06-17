@@ -135,11 +135,16 @@
 }
 
 #slider-container {
-
 	margin-top: 10%;
 	visibility: hidden;
-	
-
+}
+.side-box {
+	display: flex;
+	justify-content: center;
+	margin: 2% !important;
+	width: 26% !important;
+	font-family: 'Open Sans', 'Helvetica', sans-serif;
+	color: #eee;
 }
 
  @media screen and (max-width: 425px) {

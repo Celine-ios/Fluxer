@@ -1,0 +1,14 @@
+/* links.css */
+
+a {
+
+	text-decoration: none;
+}
+.link {
+
+	text-decoration: none;
+}
+.link:hover {
+
+	font-weight: bolder;
+}
