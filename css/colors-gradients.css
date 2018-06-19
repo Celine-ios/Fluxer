@@ -37,7 +37,7 @@
 }
 .white {
 
-	background: #F4F6F7;
+	background: #fff;
 
 }
 .bk-green {
@@ -58,13 +58,7 @@
      GRADIENTS 
 
                 */
-
-
-
-.flx-gradient-classic {
-
-	  background: -webkit-linear-gradient(left,#22f59d,#0069ff);
-    background: -ms-linear-gradient(left,#22f59d,#0069ff);
-    background: -moz-linear-gradient(left,#22f59d,#0069ff);
-    background: -o-linear-gradient(left,#22f59d,#0069ff);
+    .flx-gradient-classic {
+    background: -webkit-linear-gradient(left,#22f59d,#0069ff);
+    background: linear-gradient(left,#22f59d,#0069ff);
 }

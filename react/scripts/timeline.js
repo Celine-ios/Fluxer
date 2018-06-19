@@ -10,7 +10,7 @@ class TimelineContent extends React.Component {
 	<div className="notificationsFrame">
 			<div className="panel">
 	
-	<div className="header flx-classic-gradient">
+	<div className="header flx-gradient-classic">
 					<div className="menuIcon">
 				<div className="dashTop"></div>
 			<div className="dashBottom"></div>
@@ -95,13 +95,13 @@ class TimelineContent extends React.Component {
 			return (
 
 		<div>
-
+			
 			{activities.map((activity) => (
 				
 				<TimelineContent activity={activity}/>
-
+				
 		))}
-			
+		
 	</div>
 	
 

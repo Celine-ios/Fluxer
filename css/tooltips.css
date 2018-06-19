@@ -28,7 +28,8 @@
  	  width: 20px;
  	  height: 20px;
  	  background: #fff;
- 	  transform: rotate(45deg);
+ 	  -webkit-transform: rotate(45deg);
+ 	          transform: rotate(45deg);
  	  margin-left: 3.8%;
  	  margin-top: 1.8%;
  	  z-index: 1;
