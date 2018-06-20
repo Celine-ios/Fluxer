@@ -61,6 +61,20 @@
 
                   return $row['PORTADA'];
     }
+    function fetch_profile() 
+    {
+       $conn = new Connection();
+        $test = $conn->connect();
+        $select = $conn->select_db($test, 'fluxer');
+        $email = $this->email;
+        $sql = "SELECT F_PERFIL FROM usuarios WHERE CORREO='".$email."';";
+
+              $query = mysqli_query($test, $sql);
+
+                $row = mysqli_fetch_array($query,MYSQLI_BOTH);
+
+                  return $row['F_PERFIL'];
+    }
 
     public function change_wallpaper($link_new_wallpaper)
     {
@@ -89,6 +103,33 @@
                 return false;
               }
 
+    }
+    public function change_profile() 
+    {
+        $conn = new Connection();
+
+            $test = $conn -> connect();
+
+            $select = $conn -> select_db($test,'fluxer');
+
+             // Fetch the username
+
+             $user = $this -> fetch_name();
+
+             $sql = "UPDATE usuarios SET F_PERFIL='".$link_new_wallpaper."' WHERE DIRECCION='".$user[1]."';";
+
+              $query = mysqli_query($test, $sql);
+
+              if ($query) {
+
+                return true;
+
+              }
+
+              else {
+
+                return false;
+              }
     }
   }
 
