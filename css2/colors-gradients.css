@@ -1,0 +1,70 @@
+/* colors-gradients.css */
+/*
+
+  A Fluxer Stylesheet 
+  2018
+  Coded by: Juan Guzmán
+  CEO and Founder 
+
+   */
+ 
+   /*
+
+   COLORS
+ 		    */
+
+.red {
+
+
+   background: #ff3333;
+
+}
+.green {
+
+	 background: #4CFF33;
+}
+.blue {
+
+	 background: #33B5FF;
+}
+.yellow {
+
+	 background: #F4F80A;
+}
+.grey {
+
+	 background: #797D7F;
+}
+.white {
+
+	background: #F4F6F7;
+
+}
+.bk-green {
+
+	background: #117A65;
+}
+.purple {
+
+	background: #760AF8;
+}
+.black {
+
+  background: #312F2F;
+}
+
+  /*
+
+     GRADIENTS 
+
+                */
+
+
+
+.flx-gradient-classic {
+
+	  background: -webkit-linear-gradient(left,#22f59d,#0069ff);
+    background: -ms-linear-gradient(left,#22f59d,#0069ff);
+    background: -moz-linear-gradient(left,#22f59d,#0069ff);
+    background: -o-linear-gradient(left,#22f59d,#0069ff);
+}

@@ -1,0 +1,25 @@
+/* modals.css */
+/*
+
+  A Fluxer Stylesheet 
+  2018
+  Coded by: Juan Guzmán
+  CEO and Founder 
+
+   */
+
+ .modal {
+
+	position: absolute;
+    box-shadow: #000000ad 0px 0px 10px 1000px;
+    z-index: 100;
+    display: none;
+    
+ }
+
+ .modal-wallpaper {
+
+ 	left: 15%;
+	right: 15%;
+	
+ }
