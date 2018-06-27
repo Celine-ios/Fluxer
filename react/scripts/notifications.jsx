@@ -1,13 +1,6 @@
 class NBox extends React.Component {
-	state = {
-			greet: 'Hello'
-		}
-	setting = () => {
-			this.setState({
-				greet: 'Bye'
-			});
-		}
 	render() {
+		const n = this.props.n;
 		return(
 		<div className="white container-8" style={{textAlign: 'center', marginBottom: '4%'}}>
 		<header className="container-8 flx-gradient-classic" style={{padding: '1% 0%'}}>
@@ -18,7 +11,7 @@ class NBox extends React.Component {
 						<img src="http://www.croop.cl/UI/twitter/images/doug.jpg" alt="etc" className="image-circle" style={{width: '100%'}}/>
 					</div>
 					<div style={{width: '85%',fontSize: '0.67em',padding: '0% 4%',textAlign: 'left'}}>
-						<span>Juan Guzmán ha reaccionado a tu Post<br/>
+						<span>{n.content}<br/>
 							<small>Hace una hora</small>
 						</span>
 					</div>
@@ -29,15 +22,26 @@ class NBox extends React.Component {
 }
 class Notifications extends React.Component {
 	render() {
+		const notification = this.props.notifications;
 		return(
 		<div className="container-8" style={{textAling: 'center'}}>
-			<NBox/>
-			<NBox/>
-			<NBox/>
-			<NBox/>
+			{
+				notification.map((n)=> (
+					<NBox n={n}/>
+					))
+			}
 		</div>
 			)
 	}
 }
-var notif = document.getElementById('notifications');
-ReactDOM.render(<Notifications/>, notif);
+var ajax = new XMLHttpRequest();
+ajax.onreadystatechange = function() {
+	if(ajax.readyState == 4 && this.status == 200) {
+		var notification = JSON.parse(this.responseText);
+		var notif = document.getElementById('notifications');
+		ReactDOM.render(<Notifications notifications={notification}/>, notif);
+	}
+
+};
+	ajax.open('get','../php/ajax/pick_notifications.php');
+	ajax.send();

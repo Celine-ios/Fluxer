@@ -9,14 +9,9 @@
 
 		function __construct()
 		{
-			
 			 $this -> db_host = '127.0.0.1:3306';
 			 $this -> db_user = 'root';
-			 
-
-			  
 		}
-
 
 		function connect()
 		{

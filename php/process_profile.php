@@ -2,6 +2,7 @@
 #process_profile.php
 
       include 'class/UserClass.php';
+      error_reporting(-1);
 
   $wallpaper = $_FILES['profile']['name'];
 

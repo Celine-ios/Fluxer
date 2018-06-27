@@ -63,6 +63,8 @@ if (!$select) {
              // FALTAN COLUMNAS PARA LA BD
              // FALTAN COLUMNAS PARA LA BD
              // FALTAN COLUMNAS PARA LA BD
+
+             // Creating Posts table
              $sql = "CREATE TABLE ".$direccion_cuenta."posts(title varchar(200),time DATETIME,footer varchar(200000),comments BIGINT(200),likes INT(200))";
 
              $query_create_post_db = mysqli_query($test, $sql);
@@ -71,6 +73,17 @@ if (!$select) {
                   die("ERROR: ".mysqli_error($test));
                   return;
                }
+
+               // Creating Notifications Table
+               $sql = "CREATE TABLE ".$direccion_cuenta."notifications(photo varchar(200),time DATETIME, content varchar(200))";
+
+             $query_create_notif_db = mysqli_query($test, $sql);
+
+               if (! $query_create_notif_db) {
+                  die("ERROR: ".mysqli_error($test));
+                  return;
+               }
+
 
                  $directory = mkdir('../Perfil/'.$direccion_cuenta.'/');
 

@@ -14,6 +14,7 @@
 
   	function __construct()
   	{
+        error_reporting(0);
         session_start();
         $this -> email = $_SESSION['email'];
         $this -> password = $_SESSION['password'];
@@ -130,6 +131,26 @@
 
                 return false;
               }
+    }
+    public function fetch_notifications()
+    {
+       $conn = new Connection();
+
+        $test = $conn-> connect();
+
+          $select = $conn -> select_db($test, 'fluxer');
+
+          $user = $this-> fetch_name();
+
+          $sql = "SELECT * FROM ".$user[1]."notifications";
+
+            $notifs = mysqli_query($test, $sql);
+
+          $notifs_array = array();
+        while ($row = mysqli_fetch_array($notifs, MYSQLI_BOTH)) {
+                array_push($notifs_array, $row);
+        }
+        echo json_encode($notifs_array);
     }
   }
 
