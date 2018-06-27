@@ -3,7 +3,6 @@ class NBox extends React.Component {
 		const n = this.props.n;
 		return(
 		<div className="white container-8" style={{textAlign: 'center', marginBottom: '4%'}}>
-<<<<<<< HEAD
 		<header className="container-8 flx-gradient-classic" style={{padding: '1% 0%'}}>
 		<span className="txt-white">Notificación</span>
 		</header>
@@ -17,9 +16,6 @@ class NBox extends React.Component {
 						</span>
 					</div>
 				</div>
-=======
-				<h1 style={{margin: '0'}} onClick={this.setting}>{this.state.greet}</h1>
->>>>>>> 5b7c1015c8d036b26482ae5058819864910223d0
 			</div>	
 			)
 	}
