@@ -1,0 +1,16 @@
+/* text-position.css */
+
+.txt-center {
+
+	 text-align: center !important;
+}
+
+.txt-left {
+
+	 text-align: left !important;
+}
+
+.txt-right {
+
+	 text-align: right !important;
+}

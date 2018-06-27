@@ -1,0 +1,48 @@
+/* images.css */
+/*
+
+  A Fluxer Stylesheet 
+  2018
+  Coded by: Juan Guzmán
+  CEO and Founder 
+
+   */
+
+   .image {
+
+   	   border-radius: 2%;
+   	   width: 30%;
+   }
+
+   .image:hover {
+
+   	    transition: box-shadow 1s ease 1s;
+   	   box-shadow: #0000009e 0px 0px 15px 5px;
+   }
+   
+   .image-circle {
+
+   	   border-radius: 50%;
+   	   width: 30%;
+   }
+   .image-profile {
+
+   	   border-radius: 50%;
+   	   width: 8.5%;
+       
+   }
+   .image-profile:hover {
+
+	     transition: box-shadow 1s ease 1s;
+   	   box-shadow: #0000009e 0px 0px 15px 5px;
+
+   	   
+   }
+  .image-hidden-modal {
+    margin: 0;
+    margin-left: 2.5%;
+    width: 90%;
+    height: auto;
+    display: none;
+ 
+     }

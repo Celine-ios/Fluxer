@@ -1,0 +1,186 @@
+body {
+                
+    width: 100%;
+    background: -webkit-linear-gradient(top,#42c540,#007bff));
+    background-repeat: no-repeat;
+
+}
+
+h2[align="center"] {
+                
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    color: white;
+    -webkit-transition: left 1s ease 1s;
+    -moz-transition: left 1s ease 1s;
+    -ms-transition: left 1s ease 1s;
+    -o-transition: left 1s ease 1s;
+    
+}
+
+.header {
+    
+    position: fixed;
+    z-index: 3;
+    background: -webkit-linear-gradient(left,#22f59d,#0069ff);
+    background: -ms-linear-gradient(left,#22f59d,#0069ff);
+    background: -moz-linear-gradient(left,#22f59d,#0069ff);
+    background: -o-linear-gradient(left,#22f59d,#0069ff);
+    width: 100%;
+    height: 11.5%;
+    transition: background 20s ease-in-out 1s;
+    box-shadow: #00000080 0px 0px 7px 1px;
+    font-family: 'Cabin', sans-serif;
+    display: none;
+}
+
+h1 {
+
+    font-family: 'cabin', sans-serif;
+    color: white;
+    font-size: larger;
+    font-weight: 700;
+    width: 10%;
+    height: 4%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+#logo {
+
+    width: 25%;
+    padding: 1%;
+    margin-left: 5%;
+    margin-top: 1%;
+
+}
+
+#form-register {
+
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+ #form-container {
+
+
+    padding: 30px 100px 50%;
+
+}
+
+#submit {
+
+    top: 90%;
+    position: absolute;
+    left: 45%;
+
+}
+
+#responsive_container {
+
+     visibility: hidden;
+
+}
+
+
+            
+@media screen and (max-width: 638px) {
+                
+h1 {
+
+    position: absolute;
+    left: 36%;
+    margin: 0 auto;
+    margin-top: 7%;
+    width: 21%;
+
+}
+                 
+}
+
+           
+
+@media screen and (max-width: 375px) {
+
+.header {
+
+    display: flex;
+    height: 4.6rem;
+
+}   
+
+#logo {
+
+    width: 15%;
+    margin-left: 4%;
+    margin-top: 4%;
+    height: 3rem;
+
+}
+
+.responsive_button {
+
+
+      visibility: visible;
+      float: right;
+      width: 100%;
+      height: 100%;
+      border: 1px solid aqua;
+      background: transparent;
+      border-radius: 5%;
+
+}
+
+#responsive_container {
+
+    width: 20%;
+    height: 75%;
+    padding-top: 2%;
+    padding-right: 5%;
+    position: absolute;
+    left: 80%;
+    top: 12%;
+
+}
+
+#form-holder {
+
+    display: none;
+
+}
+
+button > hr {
+
+    border: 1px solid aqua;
+    margin: 0 auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+
+}
+
+#form-register {
+
+    width: 100%;
+
+}
+
+#form-container {
+
+
+    padding: 30% 10% 70% 10%;
+
+}
+
+#submit {
+
+
+    position: initial;
+    margin-top: 70%;    
+    margin-left: 33%;   
+
+}
+
+}
+        
