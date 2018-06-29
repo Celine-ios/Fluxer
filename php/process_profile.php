@@ -35,10 +35,10 @@
 
           rename('C:/xampp2/htdocs/dashboard/Fluxer/Perfil/'.$address[1].'/'.'images/'.$wallpaper,'C:/xampp2/htdocs/dashboard/Fluxer/Perfil/'.$address[1].'/'.'images/'.'profile.'.$format);
 
-           $new_wallpaper_link = '/dashboard/Fluxer/Perfil/'.$address[1].'/'.'images/'.'profile.'.$format;
+           $new_profile_link = $address[1].'/'.'images/'.'profile.'.$format;
 
             
-            $delete_wallpaper = $user -> change_profile($new_wallpaper_link);
+            $delete_wallpaper = $user -> change_profile($new_profile_link);
 
               if ($delete_wallpaper == true) {
                 

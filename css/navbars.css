@@ -5,6 +5,11 @@ nav {
   display: -ms-flex;
   display: flex;
   justify-content: space-around;
+  padding: 1%;
+}
+.nav-box {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
 }
 @media screen and (max-width: 360px) {
 
@@ -18,7 +23,7 @@ nav {
     flex-direction: row;
     margin: 1% 0;
   }
-  .navbar-horizontal a {
+  .navbox a {
     margin: 0% 4% 8% 0%;
     white-space: nowrap;
   }

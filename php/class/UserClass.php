@@ -105,7 +105,7 @@
               }
 
     }
-    public function change_profile() 
+    public function change_profile($link_new_profile) 
     {
         $conn = new Connection();
 
@@ -117,7 +117,7 @@
 
              $user = $this -> fetch_name();
 
-             $sql = "UPDATE usuarios SET F_PERFIL='".$link_new_wallpaper."' WHERE DIRECCION='".$user[1]."';";
+             $sql = "UPDATE usuarios SET F_PERFIL='".$link_new_profile."' WHERE DIRECCION='".$user[1]."';";
 
               $query = mysqli_query($test, $sql);
 

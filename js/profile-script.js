@@ -74,6 +74,12 @@ function preview_wallpaper(input, type) {
 
                         button.style.margin="0% 1% 4% 56.5%";
 
+                        var description = document.getElementById('description');
+                        description.style.display='none';
+
+                        var notifications = document.getElementById('notifications');
+                        notifications.style.display='none';
+
                         var likes_number = document.getElementsByClassName('likes').length;
                         alert(likes_number);
                         for(index = 0; index < likes_number; index++) {

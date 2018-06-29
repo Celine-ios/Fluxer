@@ -186,11 +186,7 @@
           <div class="container-5" style="margin: 0;margin-left: 3%;">
             <img src="#" class="image image-hidden-modal">
           </div>
-<<<<<<< HEAD
           <input type="file" name="profile" id="file-wallpaper-profile" class="file button button-plain-flat">
-=======
-          <input type="file" name="wallpaper" id="file-wallpaper-profile" class="file button button-plain-flat">
->>>>>>> 5b7c1015c8d036b26482ae5058819864910223d0
           <br>
           <input type="submit" class="button button-primary-flat" id="button-wallpaper" value="Aceptar">  
         </form>
@@ -208,28 +204,45 @@
 </div>
 <!-- / Post Container -->
 <div style="display: flex;flex-direction: row;">
-  <div class="container-2 white side-box" style="display: flex;flex-direction: column;align-items: flex-start;justify-content: flex-start;">
+  <div class="container-2 white side-box" style="display: flex;flex-direction: column;align-items: flex-start;justify-content: flex-start;height: 26.002em;" id="description">
     <div style="padding-top: 20%;width: 100%;height: 2em;display: flex;justify-content: center;">
       <span>Hola, descripción aquí</span>
       </div>
-      <div>
+      <div style="width: 100%;">
         <ul style="list-style-type: none;">
-          <li>Pot</li>
-          <li>Lorem</li>
-          <li>Ipsum</li>
-          <li>Dolorum</li>
-          <li>Etc</li>
-          <li>Erc</li>
+          <li><i class="fas fa-home"></i><span style="padding-left: 3%;"> Vive en</span></li>
+          <br>
+          <li><i class="fas fa-book"></i><span style="padding-left: 4.5%;"> Estudia en</span></li>
+          <br>
+          <li><i class="fas fa-briefcase"></i><span style="padding-left: 4%;"> Trabaja en</span></li>
+          <br>
+          <li><i class="fas fa-play-circle"></i><span style="padding-left: 3%;"> Canción Favorita</span></li>
         </ul>
       </div>
-  </div>
-  <div class="container-3" id="timeline" style="display: flex; justify-content: center;width: 42%;padding: 2% 0%;">
+    <hr style="border: 0.1px solid #eee;width: 90%;">
+      <div class="container-8" style="display: flex;justify-content: center;flex-direction: column;">
+        <div style="display: flex;justify-content: center;">
+        <span>Cosas Favoritas</span>
+        </div>
+          <div>
+            <figure></figure>
+          </div>
+          <div>
+            <figure></figure>
+          </div>
+          <div>
+            <figure></figure>
+          </div>
+        </div>
+      </div>
+      <div class="container-3" id="timeline" style="display: flex; justify-content: center;width: 42%;padding: 2% 0%;">
   <img src="../Multimedia/GIF/circle.gif" style="width: 50%;height: 10em;">
 </div>
   <div class="container-2 side-box" id="notifications">
     <img src="../Multimedia/GIF/circle.gif" style="width: 50%;height: 5em;">
   </div>
-</div>
+  </div>
+  
 <!-- React Scripts -->
 <script type="text/babel" src="../react/scripts/timeline.js"></script>
 <script type="text/babel" src="../react/scripts/post-tooltips.jsx"></script>
