@@ -1,0 +1,35 @@
+.table {
+	width: 60%;
+	margin: 0% 20%;
+	font-family: 'Open Sans', sans-serif;
+	background: #fff;
+}
+.table thead {
+	width: 100%;
+}
+thead th {
+	width: 50%;
+	padding: 1.618%;
+}
+thead th:nth-child(1) {
+	border-bottom: 1px solid limegreen;
+}
+tr {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+tr .left-side {
+	display: flex;
+	width: 20%;
+	align-items: center;
+	padding: 2%;
+}
+tr .right-side {
+	display: block;
+	width: 80%;
+	margin-left: 2%;
+}
+.right-side h4 {
+	margin-bottom: 0%;
+}

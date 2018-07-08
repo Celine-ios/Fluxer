@@ -47,3 +47,9 @@
     display: none;
  
      }
+.image-search {
+  border-radius: 50%;
+  width: 90%;
+  height: 6.2rem;
+  padding: 4%;
+}
