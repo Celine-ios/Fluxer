@@ -11,7 +11,7 @@ thead th {
 	width: 50%;
 	padding: 1.618%;
 }
-thead th:nth-child(1) {
+.green-border {
 	border-bottom: 1px solid limegreen;
 }
 tr {

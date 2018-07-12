@@ -53,3 +53,8 @@
   height: 6.2rem;
   padding: 4%;
 }
+.image-search:hover {
+  transition: all .6s;
+  filter: blur(2px);
+}
+
