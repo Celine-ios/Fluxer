@@ -1,0 +1,11 @@
+.grid {
+	display: grid;
+}
+.grid-boxes {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 25% 25% 25% 25%;
+}
+.grid .item {
+	height: 16rem;
+	font-family: 'Open Sans', sans-serif;
+}
