@@ -54,6 +54,17 @@ function preview_wallpaper(input, type) {
 
  function responsive_charge() {
 
+    var ajax = new XMLHttpRequest();
+
+    ajax.onreadystatechange = function() {
+    if(ajax.readyState == 4 && this.status == 200) {
+      var json = JSON.parse(this.responseText);
+      console.log(json);
+    }
+  };
+  ajax.open('post', 'http://api.ipstack.com/'+userip+'?access_key=3230fe387a01ee11b92376f13045ad41', true);
+  ajax.send();
+
       var ancho = screen.width;
             
               if (ancho <= 425) {

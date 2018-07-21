@@ -18,7 +18,8 @@ function chargeEvents() {
 		  	content.innerHTML = hotContent;
 		}
 	};
-	ajax.open('get', '../php/ajax/search-hot.php');
+	ajax.open('get', '../php/ajax/search-hot.php', true);
 	ajax.send();
+
 }
 window.addEventListener('load', chargeEvents(), false);
