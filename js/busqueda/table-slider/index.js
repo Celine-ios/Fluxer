@@ -1,5 +1,5 @@
-
-var personas = document.getElementById('personas');
+	if (document.getElementById('personas')) {
+		var personas = document.getElementById('personas');
 	var publicidad = document.getElementById('publicidad');
 
 function change(caller) {
@@ -20,3 +20,4 @@ function chargeEvents() {
 	}, false);
 }
 window.addEventListener('load', chargeEvents(), false);
+	}

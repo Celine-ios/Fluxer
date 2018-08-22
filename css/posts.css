@@ -1,62 +1,37 @@
 #timeline  {
-
-
     padding: 2%;
-
 }
-
-
 .demo  {
-
   position: relative;
-
 }
-
 .title {
-
   padding-top: 3%;
   display: block;
   text-align: center;
   color: #fff;
   font-weight: 600;
   font-size: 15px;
-  
 }
-
-
 .article  {
-
-
   margin: 0 auto;
   width: 100%;
-
-
 }
-
 .notificationsFrame  {
-
   z-index: 2;
-  width: 100%;
+  width: 98%;
   top: 20px;
   background: #fff;
   border-radius: 3px;
   overflow: hidden;
   font-family: 'Open Sans', Helvetica, sans-serif;
   margin-bottom: 40px;
-  
-
 }
-
 #reactions-hub {
-
   display: flex;
   flex-direction: row;
   margin: 2%;
-
 }
-
 .likes {
-
   font-size: 0.8rem;
   width: 10%;
   display: -moz-flex;
@@ -64,7 +39,6 @@
   display: -o-flex;
   display: flex;
   justify-content: space-evenly;
-
 }
 
 .likes p {

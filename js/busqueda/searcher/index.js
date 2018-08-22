@@ -1,6 +1,10 @@
 var content = document.getElementById('content');
 var ajax = new XMLHttpRequest();
 
+var search = () => {
+	
+};
+
 function chargeEvents() {
 	ajax.onreadystatechange = function() {
 		if(ajax.readyState == 4 && this.status == 200) {
@@ -20,6 +24,10 @@ function chargeEvents() {
 	};
 	ajax.open('get', '../php/ajax/search-hot.php', true);
 	ajax.send();
+	/* 
+		AJAX Search 
+	*/
+	var button = document.getElementById('search-button').addEventListener('click', search);
 
 }
 window.addEventListener('load', chargeEvents(), false);

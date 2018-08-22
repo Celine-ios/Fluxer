@@ -21,32 +21,16 @@ function preview_wallpaper(input, type) {
               return;
           }
 
-        $('.image-hidden-modal').css('display','block');        
-
+        $('.image-hidden-modal').css('display','block');
         $('.image-hidden-modal').attr('src', e.target.result);
-
          var nombre = input.files[0].name;
-            
              var formato = nombre.split('.');
-
-
-
              if ((formato[1] != 'jpg') && (formato[1] != 'png')) {
-
-
                     alert("Éste tipo de archivos no pueden ser subidos");
-
-                      
                      return;
                }
-
-
               
      }
-
- 
-
- 
     reader.readAsDataURL(input.files[0]);
  }
      
@@ -58,13 +42,20 @@ function preview_wallpaper(input, type) {
 
     ajax.onreadystatechange = function() {
     if(ajax.readyState == 4 && this.status == 200) {
-      var json = JSON.parse(this.responseText);
-      console.log(json);
+      var location = JSON.parse(this.responseText);
+      console.log(location);
+      var time_box = document.getElementById('time-box');
+      if (location.city) {
+      var time_info = '<div class="container" style="text-align: center;"><h1 class="heading-4">'+location.city+', '+location.country_name+' '+location.location.country_flag_emoji+'</h1></div>';
+      } else {
+      var time_info = '<div class="container" style="text-align: center;"><h1 class="heading-4"> '+location.location.capital+', '+location.country_name+' '+location.location.country_flag_emoji+'</h1></div>';        
+      }
+      
+      time_box.innerHTML = time_info;
     }
   };
   ajax.open('post', 'http://api.ipstack.com/'+userip+'?access_key=3230fe387a01ee11b92376f13045ad41', true);
   ajax.send();
-
       var ancho = screen.width;
             
               if (ancho <= 425) {
