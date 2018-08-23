@@ -2,7 +2,17 @@ var content = document.getElementById('content');
 var ajax = new XMLHttpRequest();
 
 var search = () => {
-	
+	var par = document.getElementsByName('search')[0].value;
+	alert(par);
+	ajax.onreadystatechange = () => {
+		if (ajax.readyState == 4 && this.status == 200) {
+			var results = this.responseText;
+			console.log(results);
+		}
+	};
+	ajax.open('post', '../php/ajax/search.php', true);
+	ajax.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	ajax.send("s=" + par);
 };
 
 function chargeEvents() {
@@ -27,7 +37,8 @@ function chargeEvents() {
 	/* 
 		AJAX Search 
 	*/
-	var button = document.getElementById('search-button').addEventListener('click', search);
+	document.getElementById('search-button').addEventListener('click', search);
+	document.getElementsByName('search')[0].addEventListener('keyup', search);
 
 }
 window.addEventListener('load', chargeEvents(), false);
